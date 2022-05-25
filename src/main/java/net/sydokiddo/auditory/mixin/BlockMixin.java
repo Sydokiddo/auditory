@@ -172,10 +172,15 @@ public abstract class BlockMixin {
                             "minecraft:iron_block",
                             "minecraft:observer",
                             "minecraft:dropper",
-                            "minecraft:dispenser"
+                            "minecraft:dispenser",
+                            "minecraft:hopper",
+                            "minecraft:piston",
+                            "minecraft:sticky_piston",
+                            "minecraft:heavy_weighted_pressure_plate"
                             -> METAL;
                     case
-                            "minecraft:gold_block"
+                            "minecraft:gold_block",
+                            "minecraft:light_weighted_pressure_plate"
                             -> GOLD;
                     case
                             "minecraft:gravel",
@@ -194,6 +199,7 @@ public abstract class BlockMixin {
                             "minecraft:soul_wall_torch",
                             "minecraft:redstone_wall_torch",
                             "minecraft:end_rod",
+                            "minecraft:tripwire_hook",
                             "minecraft:skeleton_skull",
                             "minecraft:wither_skeleton_skull",
                             "minecraft:zombie_head",

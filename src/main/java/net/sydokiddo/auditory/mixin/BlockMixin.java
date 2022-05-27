@@ -26,6 +26,7 @@ public abstract class BlockMixin {
     private static final BlockSoundGroup GOLD = new BlockSoundGroup(1.0F, 1.6F, SoundEvents.BLOCK_NETHERITE_BLOCK_BREAK, SoundEvents.BLOCK_NETHERITE_BLOCK_STEP, SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE, SoundEvents.BLOCK_NETHERITE_BLOCK_HIT, SoundEvents.BLOCK_NETHERITE_BLOCK_FALL);
     private static final BlockSoundGroup LILY_PAD = new BlockSoundGroup(1.0F, 1.0F, SoundEvents.BLOCK_BIG_DRIPLEAF_BREAK, SoundEvents.BLOCK_BIG_DRIPLEAF_STEP, SoundEvents.BLOCK_LILY_PAD_PLACE, SoundEvents.BLOCK_BIG_DRIPLEAF_HIT, SoundEvents.BLOCK_BIG_DRIPLEAF_FALL);
     private static final BlockSoundGroup SMALL_OBJECT = new BlockSoundGroup(1.0F, 0.8F, SoundEvents.BLOCK_CANDLE_BREAK, SoundEvents.BLOCK_CANDLE_STEP, SoundEvents.BLOCK_CANDLE_PLACE, SoundEvents.BLOCK_CANDLE_HIT, SoundEvents.BLOCK_CANDLE_FALL);
+    private static final BlockSoundGroup SHULKER_BOX = new BlockSoundGroup(1.0F, 0.6F, SoundEvents.BLOCK_CALCITE_BREAK, SoundEvents.BLOCK_CALCITE_STEP, SoundEvents.BLOCK_CALCITE_PLACE, SoundEvents.BLOCK_CALCITE_HIT, SoundEvents.BLOCK_CALCITE_FALL);
 
     @Inject(method = "getSoundGroup", at = @At("TAIL"), cancellable = true)
     private void getSoundGroupMixin(CallbackInfoReturnable<BlockSoundGroup> cir){
@@ -98,6 +99,25 @@ public abstract class BlockMixin {
                             "minecraft:mycelium",
                             "minecraft:dirt_path"
                             -> GRASS_BLOCK;
+                    case
+                            "minecraft:shulker_box",
+                            "minecraft:white_shulker_box",
+                            "minecraft:light_gray_shulker_box",
+                            "minecraft:gray_shulker_box",
+                            "minecraft:black_shulker_box",
+                            "minecraft:brown_shulker_box",
+                            "minecraft:red_shulker_box",
+                            "minecraft:orange_shulker_box",
+                            "minecraft:yellow_shulker_box",
+                            "minecraft:lime_shulker_box",
+                            "minecraft:green_shulker_box",
+                            "minecraft:cyan_shulker_box",
+                            "minecraft:light_blue_shulker_box",
+                            "minecraft:blue_shulker_box",
+                            "minecraft:purple_shulker_box",
+                            "minecraft:magenta_shulker_box",
+                            "minecraft:pink_shulker_box"
+                            -> SHULKER_BOX;
                     case
                             "minecraft:grass",
                             "minecraft:dead_bush",
@@ -200,18 +220,37 @@ public abstract class BlockMixin {
                             "minecraft:redstone_wall_torch",
                             "minecraft:end_rod",
                             "minecraft:tripwire_hook",
-                            "minecraft:skeleton_skull",
-                            "minecraft:wither_skeleton_skull",
-                            "minecraft:zombie_head",
-                            "minecraft:creeper_head",
-                            "minecraft:player_head",
-                            "minecraft:dragon_head",
-                            "minecraft:skeleton_wall_skull",
-                            "minecraft:wither_skeleton_wall_skull",
-                            "minecraft:zombie_wall_head",
-                            "minecraft:creeper_wall_head",
-                            "minecraft:player_wall_head",
-                            "minecraft:dragon_wall_head"
+                            "minecraft:potted_wither_rose",
+                            "minecraft:potted_white_tulip",
+                            "minecraft:potted_warped_roots",
+                            "minecraft:potted_spruce_sapling",
+                            "minecraft:potted_red_tulip",
+                            "minecraft:potted_red_mushroom",
+                            "minecraft:potted_poppy",
+                            "minecraft:potted_pink_tulip",
+                            "minecraft:potted_oxeye_daisy",
+                            "minecraft:potted_orange_tulip",
+                            "minecraft:potted_oak_sapling",
+                            "minecraft:potted_mangrove_propagule",
+                            "minecraft:potted_lily_of_the_valley",
+                            "minecraft:potted_jungle_sapling",
+                            "minecraft:potted_flowering_azalea_bush",
+                            "minecraft:potted_fern",
+                            "minecraft:potted_dead_bush",
+                            "minecraft:potted_dark_oak_sapling",
+                            "minecraft:potted_dandelion",
+                            "minecraft:potted_crimson_roots",
+                            "minecraft:potted_crimson_fungus",
+                            "minecraft:potted_cornflower",
+                            "minecraft:potted_cactus",
+                            "minecraft:potted_brown_mushroom",
+                            "minecraft:potted_blue_orchid",
+                            "minecraft:potted_birch_sapling",
+                            "minecraft:potted_bamboo",
+                            "minecraft:potted_azure_bluet",
+                            "minecraft:potted_azalea_bush",
+                            "minecraft:potted_allium",
+                            "minecraft:potted_acacia_sapling"
                             -> SMALL_OBJECT;
                     default -> cir.getReturnValue();
                 }

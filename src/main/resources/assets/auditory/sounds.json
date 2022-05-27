@@ -1,0 +1,51 @@
+{
+  "block.shulker_box.place": {
+    "sounds": [
+      "auditory:block/shulker_box/break1",
+      "auditory:block/shulker_box/break2",
+      "auditory:block/shulker_box/break3",
+      "auditory:block/shulker_box/break4",
+      "auditory:block/shulker_box/break5"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.shulker_box.break": {
+    "sounds": [
+      "auditory:block/shulker_box/break1",
+      "auditory:block/shulker_box/break2",
+      "auditory:block/shulker_box/break3",
+      "auditory:block/shulker_box/break4",
+      "auditory:block/shulker_box/break5"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.shulker_box.hit": {
+    "sounds": [
+      "auditory:block/shulker_box/break1",
+      "auditory:block/shulker_box/break2",
+      "auditory:block/shulker_box/break3",
+      "auditory:block/shulker_box/break4",
+      "auditory:block/shulker_box/break5"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.shulker_box.step": {
+    "sounds": [
+      "auditory:block/shulker_box/step1",
+      "auditory:block/shulker_box/step2",
+      "auditory:block/shulker_box/step3",
+      "auditory:block/shulker_box/step4",
+      "auditory:block/shulker_box/step5"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.shulker_box.fall": {
+    "sounds": [
+      "auditory:block/shulker_box/step1",
+      "auditory:block/shulker_box/step2",
+      "auditory:block/shulker_box/step3",
+      "auditory:block/shulker_box/step4",
+      "auditory:block/shulker_box/step5"
+    ]
+  }
+}

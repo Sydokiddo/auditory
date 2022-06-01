@@ -11,7 +11,7 @@ import net.minecraft.entity.decoration.LeashKnotEntity;
 @Mixin(LeashKnotEntity.class)
 public abstract class LeashKnotEntityMixin {
 
-    final private Map<Integer, Boolean> leadsSilence = new HashMap<Integer, Boolean>();
+    final private Map<Integer, Boolean> leadsSilence = new HashMap<>();
 
     @Inject(method="onBreak", at = @At(
             value = "INVOKE",

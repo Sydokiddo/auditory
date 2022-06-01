@@ -4,10 +4,10 @@
   "package": "net.sydokiddo.auditory.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BlockMixin",
     "ClientPlayNetworkHandlerMixin",
     "LeashKnotEntityMixin",
-    "MainMixin",
-    "BlockMixin"
+    "SoundEngineAccessor"
   ],
   "client": [
   ],

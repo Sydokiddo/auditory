@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 @Mixin(ClientPlayNetworkHandler.class)
 public abstract class ClientPlayNetworkHandlerMixin {
     private long lastTime = -1;
-    final private List<Integer> leadKnotsDetatchedFromThisTickIds = new ArrayList<Integer>();
+    final private List<Integer> leadKnotsDetatchedFromThisTickIds = new ArrayList<>();
 
     @Inject(method="onEntityAttach", at = @At(
             value = "INVOKE",

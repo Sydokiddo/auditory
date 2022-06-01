@@ -198,7 +198,8 @@ public abstract class BlockMixin {
                             "minecraft:hopper",
                             "minecraft:piston",
                             "minecraft:sticky_piston",
-                            "minecraft:heavy_weighted_pressure_plate"
+                            "minecraft:heavy_weighted_pressure_plate",
+                            "minecraft:spawner"
                             -> METAL;
                     case
                             "minecraft:gold_block",

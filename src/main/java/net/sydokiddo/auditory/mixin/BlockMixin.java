@@ -28,7 +28,7 @@ public abstract class BlockMixin {
     private static final BlockSoundGroup LILY_PAD = new BlockSoundGroup(1.0F, 1.0F, SoundEvents.BLOCK_BIG_DRIPLEAF_BREAK, SoundEvents.BLOCK_BIG_DRIPLEAF_STEP, SoundEvents.BLOCK_LILY_PAD_PLACE, SoundEvents.BLOCK_BIG_DRIPLEAF_HIT, SoundEvents.BLOCK_BIG_DRIPLEAF_FALL);
     private static final BlockSoundGroup SMALL_OBJECT = new BlockSoundGroup(1.0F, 0.8F, SoundEvents.BLOCK_CANDLE_BREAK, SoundEvents.BLOCK_CANDLE_STEP, SoundEvents.BLOCK_CANDLE_PLACE, SoundEvents.BLOCK_CANDLE_HIT, SoundEvents.BLOCK_CANDLE_FALL);
     private static final BlockSoundGroup SHULKER_BOX = new BlockSoundGroup(1.0F, 1.2F, ModSoundEvents.BLOCK_SHULKER_BOX_BREAK, ModSoundEvents.BLOCK_SHULKER_BOX_STEP, ModSoundEvents.BLOCK_SHULKER_BOX_PLACE, ModSoundEvents.BLOCK_SHULKER_BOX_HIT, ModSoundEvents.BLOCK_SHULKER_BOX_FALL);
-    private static final BlockSoundGroup SPAWNER = new BlockSoundGroup(1.0F, 1.2F, ModSoundEvents.BLOCK_SHULKER_BOX_BREAK, ModSoundEvents.BLOCK_SHULKER_BOX_STEP, ModSoundEvents.BLOCK_SHULKER_BOX_PLACE, ModSoundEvents.BLOCK_SHULKER_BOX_HIT, ModSoundEvents.BLOCK_SHULKER_BOX_FALL);
+    private static final BlockSoundGroup SPAWNER = new BlockSoundGroup(1.0F, 1.0F, ModSoundEvents.BLOCK_SPAWNER_BREAK, SoundEvents.BLOCK_NETHERITE_BLOCK_STEP, SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE, SoundEvents.BLOCK_NETHERITE_BLOCK_HIT, SoundEvents.BLOCK_NETHERITE_BLOCK_FALL);
 
     @Inject(method = "getSoundGroup", at = @At("TAIL"), cancellable = true)
     private void getSoundGroupMixin(CallbackInfoReturnable<BlockSoundGroup> cir){

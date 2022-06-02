@@ -8,6 +8,7 @@ import net.minecraft.block.CakeBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.sydokiddo.auditory.sound.ModSoundEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,8 @@ public class Auditory implements ModInitializer {
 	public void onInitialize() {
 
 		// Registry:
+
+		ModSoundEvents.registerSounds();
 
 		LOGGER.info("Thank you for downloading Auditory! :)");
 

@@ -21,10 +21,8 @@ class ItemDropSoundMixin
     {
         if (retainOwnership && !stack.isEmpty())
         {
-            float range = 0.1f;
-            float n = 1f + range *
-                    (1f * stack.getItem().getMaxCount() / stack.getCount()) - range / 2;
             MinecraftClient client = MinecraftClient.getInstance();
+            assert client.player != null;
             client.player.playSound(ModSoundEvents.ENTITY_PLAYER_DROP_ITEM, SoundCategory.PLAYERS, 0.1F, 1.0F);
         }
     }

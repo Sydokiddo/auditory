@@ -23,6 +23,7 @@ public class BowPullingSoundMixin
     void pull(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir)
     {
         MinecraftClient client = MinecraftClient.getInstance();
+        assert client.player != null;
         client.player.playSound(ModSoundEvents.ITEM_BOW_PULLING, SoundCategory.PLAYERS, 0.1F, 1.2F);
     }
 }

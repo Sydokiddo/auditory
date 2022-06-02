@@ -39,6 +39,7 @@ public abstract class ClientPlayNetworkHandlerMixin {
 
         if (newHoldingEntity == null) {
             // Detaching Lead Sounds
+            assert attachedEntity != null;
             Entity currentHoldingEntity = attachedEntity.getHoldingEntity();
 
             if (!(currentHoldingEntity instanceof LeashKnotEntity)) {
@@ -59,6 +60,7 @@ public abstract class ClientPlayNetworkHandlerMixin {
             }
         } else if (!(newHoldingEntity instanceof LeashKnotEntity)) {
             // Attach to Player Sound
+            assert attachedEntity != null;
             double x = attachedEntity.getX(), y = attachedEntity.getY(), z = attachedEntity.getZ();
             world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_PLACE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
         } else if (newHoldingEntity.age != 0) {

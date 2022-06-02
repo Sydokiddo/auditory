@@ -28,6 +28,7 @@ public abstract class EnderPearlEntityMixin extends ThrownItemEntity {
     protected void onCollision(HitResult hitResult, CallbackInfo ci) {
         super.onCollision(hitResult);
         MinecraftClient client = MinecraftClient.getInstance();
+        assert client.player != null;
         client.player.playSound(ModSoundEvents.ITEM_ENDER_PEARL_TELEPORT, SoundCategory.PLAYERS, 0.3F, 1.0F);
     }
 }

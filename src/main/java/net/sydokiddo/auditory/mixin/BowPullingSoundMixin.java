@@ -14,6 +14,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+// Plays a sound whenever the player uses a bow
+
 @Mixin(BowItem.class)
 public class BowPullingSoundMixin
 {

@@ -13,6 +13,7 @@ public class ModSoundEvents {
 // - Item Sounds:
 
     public static final SoundEvent ITEM_BOW_PULLING = registerSoundEvent("item.bow.pulling");
+    public static final SoundEvent ITEM_ENDER_PEARL_TELEPORT = registerSoundEvent("item.ender_pearl.teleport");
 
 // - Block Sounds:
 

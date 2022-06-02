@@ -2,5 +2,6 @@
   "auditory.sound_reload_key":"Reload sound system",
   "auditory.category":"Auditory",
   "subtitles.item.bow.pulling": "Bow draws back",
-  "subtitles.entity.player.drop_item": "Item drops"
+  "subtitles.entity.player.drop_item": "Item drops",
+  "subtitles.item.ender_pearl.teleport": "Player teleports"
 }

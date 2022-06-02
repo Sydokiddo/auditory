@@ -54,6 +54,13 @@
     ],
     "subtitle": "subtitles.item.bow.pulling"
   },
+  "item.ender_pearl.teleport": {
+    "sounds": [
+      "auditory:item/ender_pearl/portal",
+      "auditory:item/ender_pearl/portal2"
+    ],
+    "subtitle": "subtitles.item.ender_pearl.teleport"
+  },
   "player.item.drop": {
     "sounds": [
       "auditory:entity/player/drop_item"

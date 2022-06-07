@@ -23,7 +23,7 @@ class ItemDropSoundMixin
         {
             MinecraftClient client = MinecraftClient.getInstance();
             assert client.player != null;
-            client.player.playSound(ModSoundEvents.ENTITY_PLAYER_DROP_ITEM, SoundCategory.PLAYERS, 0.1F, 1.0F);
+            client.player.playSound(ModSoundEvents.ENTITY_PLAYER_DROP_ITEM, SoundCategory.PLAYERS, 0.3F, 1.0F);
         }
     }
 }

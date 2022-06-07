@@ -24,6 +24,6 @@ public class BowPullingSoundMixin
     {
         MinecraftClient client = MinecraftClient.getInstance();
         assert client.player != null;
-        client.player.playSound(ModSoundEvents.ITEM_BOW_PULLING, SoundCategory.PLAYERS, 0.1F, 1.2F);
+        client.player.playSound(ModSoundEvents.ITEM_BOW_PULLING, SoundCategory.PLAYERS, 0.3F, 1.2F);
     }
 }

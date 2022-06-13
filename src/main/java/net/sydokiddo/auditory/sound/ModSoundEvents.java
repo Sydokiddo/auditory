@@ -14,6 +14,7 @@ public class ModSoundEvents {
 
     public static final SoundEvent ITEM_BOW_PULLING = registerSoundEvent("item.bow.pulling");
     public static final SoundEvent ITEM_ENDER_PEARL_TELEPORT = registerSoundEvent("item.ender_pearl.teleport");
+    public static final SoundEvent ITEM_SPAWN_EGG_USE = registerSoundEvent("item.spawn_egg.use");
 
 // - Block Sounds:
 

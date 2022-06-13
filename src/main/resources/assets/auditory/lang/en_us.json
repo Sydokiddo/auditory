@@ -3,5 +3,6 @@
   "auditory.category":"Auditory",
   "subtitles.item.bow.pulling": "Bow draws back",
   "subtitles.entity.player.drop_item": "Item drops",
-  "subtitles.item.ender_pearl.teleport": "Player teleports"
+  "subtitles.item.ender_pearl.teleport": "Player teleports",
+  "subtitles.item.spawn_egg.use": "Spawn Egg cracks"
 }

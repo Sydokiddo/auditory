@@ -61,6 +61,16 @@
     ],
     "subtitle": "subtitles.item.ender_pearl.teleport"
   },
+  "item.spawn_egg.use": {
+    "sounds": [
+      "auditory:item/spawn_egg/use1",
+      "auditory:item/spawn_egg/use2",
+      "auditory:item/spawn_egg/use3",
+      "auditory:item/spawn_egg/use4",
+      "auditory:item/spawn_egg/use5"
+    ],
+    "subtitle": "subtitles.item.spawn_egg.use"
+  },
   "player.item.drop": {
     "sounds": [
       "auditory:entity/player/drop_item"
@@ -72,5 +82,11 @@
       "auditory:block/spawner/break1"
     ],
     "subtitle": "subtitles.block.generic.break"
+  },
+  "entity.silverfish.step": {
+    "subtitle": "subtitles.entity.silverfish.step"
+  },
+  "entity.endermite.step": {
+    "subtitle": "subtitles.entity.endermite.step"
   }
 }

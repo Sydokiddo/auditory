@@ -10,6 +10,9 @@
     "EnderPearlEntityMixin",
     "ItemDropSoundMixin",
     "LeashKnotEntityMixin",
+    "MixinEndermiteEntity",
+    "MixinEntityType",
+    "MixinSilverfishEntity",
     "SoundEngineAccessor"
   ],
   "client": [

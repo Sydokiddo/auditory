@@ -103,6 +103,9 @@ public abstract class BlockMixin {
                             "minecraft:dirt_path"
                             -> GRASS_BLOCK;
                     case
+                            "minecraft:magma_block"
+                            -> BlockSoundGroup.NETHERRACK;
+                    case
                             "minecraft:shulker_box",
                             "minecraft:white_shulker_box",
                             "minecraft:light_gray_shulker_box",

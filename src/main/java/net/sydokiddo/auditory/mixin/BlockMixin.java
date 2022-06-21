@@ -144,7 +144,8 @@ public abstract class BlockMixin {
                             "minecraft:lily_of_the_valley",
                             "minecraft:wither_rose",
                             "minecraft:brown_mushroom",
-                            "minecraft:red_mushroom"
+                            "minecraft:red_mushroom",
+                            "minecraft:sugar_cane"
                             -> BlockSoundGroup.HANGING_ROOTS;
                     case
                             "minecraft:cobweb",

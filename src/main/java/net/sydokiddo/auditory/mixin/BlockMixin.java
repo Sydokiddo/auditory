@@ -106,6 +106,9 @@ public abstract class BlockMixin {
                             "minecraft:magma_block"
                             -> BlockSoundGroup.NETHERRACK;
                     case
+                            "minecraft:jukebox"
+                            -> BlockSoundGroup.WOOD;
+                    case
                             "minecraft:shulker_box",
                             "minecraft:white_shulker_box",
                             "minecraft:light_gray_shulker_box",
@@ -199,6 +202,7 @@ public abstract class BlockMixin {
                     case
                             "minecraft:iron_bars",
                             "minecraft:iron_door",
+                            "minecraft:iron_trapdoor",
                             "minecraft:iron_block",
                             "minecraft:observer",
                             "minecraft:dropper",

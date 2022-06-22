@@ -28,12 +28,8 @@ public class ModSoundEvents {
 // - Other Sounds:
 
     public static final SoundEvent ENTITY_PLAYER_DROP_ITEM = registerSoundEvent("player.item.drop");
-
-// Sound Groups:
-
-    public static final BlockSoundGroup SHULKER_BOX = new BlockSoundGroup(1f, 1f,
-    ModSoundEvents.BLOCK_SHULKER_BOX_BREAK, ModSoundEvents.BLOCK_SHULKER_BOX_STEP, ModSoundEvents.BLOCK_SHULKER_BOX_PLACE,
-    ModSoundEvents.BLOCK_SHULKER_BOX_HIT, ModSoundEvents.BLOCK_SHULKER_BOX_FALL);
+    public static final SoundEvent ENTITY_BOAT_PLACE = registerSoundEvent("entity.boat.place");
+    public static final SoundEvent ENTITY_MINECART_PLACE = registerSoundEvent("entity.minecart.place");
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = new Identifier(Auditory.MOD_ID, name);

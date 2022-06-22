@@ -48,6 +48,22 @@
       "auditory:block/shulker_box/step5"
     ]
   },
+  "entity.boat.place": {
+    "sounds": [
+      "auditory:entity/boat/place1",
+      "auditory:entity/boat/place2",
+      "auditory:entity/boat/place3"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "entity.minecart.place": {
+    "sounds": [
+      "auditory:entity/minecart/place1",
+      "auditory:entity/minecart/place2",
+      "auditory:entity/minecart/place3"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
   "item.bow.pulling": {
     "sounds": [
       "auditory:item/bow/pulling"

@@ -5,11 +5,13 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BlockMixin",
+    "BoatPlaceSoundMixin",
     "BowPullingSoundMixin",
     "ClientPlayNetworkHandlerMixin",
     "EnderPearlEntityMixin",
     "ItemDropSoundMixin",
     "LeashKnotEntityMixin",
+    "MinecartPlaceSoundMixin",
     "MixinEndermiteEntity",
     "MixinEntityType",
     "MixinSilverfishEntity",

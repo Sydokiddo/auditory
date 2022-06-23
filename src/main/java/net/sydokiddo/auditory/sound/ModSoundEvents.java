@@ -1,6 +1,5 @@
 package net.sydokiddo.auditory.sound;
 
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -30,6 +29,8 @@ public class ModSoundEvents {
     public static final SoundEvent ENTITY_PLAYER_DROP_ITEM = registerSoundEvent("player.item.drop");
     public static final SoundEvent ENTITY_BOAT_PLACE = registerSoundEvent("entity.boat.place");
     public static final SoundEvent ENTITY_MINECART_PLACE = registerSoundEvent("entity.minecart.place");
+    public static final SoundEvent BLOCK_JUKEBOX_USE = registerSoundEvent("block.jukebox.use");
+    public static final SoundEvent BLOCK_JUKEBOX_EJECT = registerSoundEvent("block.jukebox.eject");
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = new Identifier(Auditory.MOD_ID, name);

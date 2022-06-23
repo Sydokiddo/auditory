@@ -6,9 +6,9 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.vehicle.BoatEntity;
 import net.minecraft.item.BoatItem;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
-import net.sydokiddo.auditory.sound.ModSoundEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -24,6 +24,6 @@ public class BoatPlaceSoundMixin
     public void createEntity(World world, HitResult hitResult, CallbackInfoReturnable<BoatEntity> cir) {
             MinecraftClient client = MinecraftClient.getInstance();
             assert client.player != null;
-            client.player.playSound(ModSoundEvents.ENTITY_BOAT_PLACE, SoundCategory.BLOCKS, 0.8F, 1.0F);
+            client.player.playSound(SoundEvents.BLOCK_WOOD_PLACE, SoundCategory.BLOCKS, 1.0F, 0.8F);
         }
     }

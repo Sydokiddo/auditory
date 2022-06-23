@@ -48,21 +48,18 @@
       "auditory:block/shulker_box/step5"
     ]
   },
-  "entity.boat.place": {
+  "block.jukebox.use": {
     "sounds": [
-      "auditory:entity/boat/place1",
-      "auditory:entity/boat/place2",
-      "auditory:entity/boat/place3"
+      "auditory:block/jukebox/use1",
+      "auditory:block/jukebox/use2"
     ],
-    "subtitle": "subtitles.block.generic.place"
+    "subtitle": "subtitles.block.jukebox.use"
   },
-  "entity.minecart.place": {
+  "block.jukebox.eject": {
     "sounds": [
-      "auditory:entity/minecart/place1",
-      "auditory:entity/minecart/place2",
-      "auditory:entity/minecart/place3"
+      "auditory:block/jukebox/eject"
     ],
-    "subtitle": "subtitles.block.generic.place"
+    "subtitle": "subtitles.block.jukebox.eject"
   },
   "item.bow.pulling": {
     "sounds": [
@@ -98,11 +95,5 @@
       "auditory:block/spawner/break1"
     ],
     "subtitle": "subtitles.block.generic.break"
-  },
-  "entity.silverfish.step": {
-    "subtitle": "subtitles.entity.silverfish.step"
-  },
-  "entity.endermite.step": {
-    "subtitle": "subtitles.entity.endermite.step"
   }
 }

@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.MinecartItem;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.sydokiddo.auditory.sound.ModSoundEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -32,7 +32,7 @@ public class MinecartPlaceSoundMixin
         if (blockState.isIn(BlockTags.RAILS)) {
             MinecraftClient client = MinecraftClient.getInstance();
             assert client.player != null;
-            client.player.playSound(ModSoundEvents.ENTITY_MINECART_PLACE, SoundCategory.BLOCKS, 0.8F, 1.0F);
+            client.player.playSound(SoundEvents.BLOCK_NETHERITE_BLOCK_PLACE, SoundCategory.BLOCKS, 1.0F, 1.2F);
         }
     }
 }

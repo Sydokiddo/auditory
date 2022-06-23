@@ -19,7 +19,6 @@ public abstract class BlockMixin {
 
     private static final BlockSoundGroup STONE_ORE = new BlockSoundGroup(1.0F, 0.9F, SoundEvents.BLOCK_NETHER_ORE_BREAK, SoundEvents.BLOCK_NETHER_ORE_STEP, SoundEvents.BLOCK_NETHER_ORE_PLACE, SoundEvents.BLOCK_NETHER_ORE_HIT, SoundEvents.BLOCK_NETHER_ORE_FALL);
     private static final BlockSoundGroup OBSIDIAN = new BlockSoundGroup(1.0F, 0.7F, SoundEvents.BLOCK_DEEPSLATE_BREAK, SoundEvents.BLOCK_DEEPSLATE_STEP, SoundEvents.BLOCK_DEEPSLATE_PLACE, SoundEvents.BLOCK_DEEPSLATE_HIT, SoundEvents.BLOCK_DEEPSLATE_FALL);
-    private static final BlockSoundGroup GRASS_BLOCK = new BlockSoundGroup(1.0F, 1.0F, SoundEvents.BLOCK_ROOTED_DIRT_BREAK, SoundEvents.BLOCK_GRASS_STEP, SoundEvents.BLOCK_ROOTED_DIRT_BREAK, SoundEvents.BLOCK_ROOTED_DIRT_BREAK, SoundEvents.BLOCK_GRASS_FALL);
     private static final BlockSoundGroup TERRACOTTA = new BlockSoundGroup(1.0F, 0.6F, SoundEvents.BLOCK_CALCITE_BREAK, SoundEvents.BLOCK_CALCITE_STEP, SoundEvents.BLOCK_CALCITE_PLACE, SoundEvents.BLOCK_CALCITE_HIT, SoundEvents.BLOCK_CALCITE_FALL);
     private static final BlockSoundGroup STONE_BRICK = new BlockSoundGroup(1.0F, 0.6F, SoundEvents.BLOCK_DEEPSLATE_TILES_BREAK, SoundEvents.BLOCK_DEEPSLATE_TILES_STEP, SoundEvents.BLOCK_DEEPSLATE_TILES_PLACE, SoundEvents.BLOCK_DEEPSLATE_TILES_HIT, SoundEvents.BLOCK_DEEPSLATE_TILES_FALL);
     private static final BlockSoundGroup CLAY_BRICK = new BlockSoundGroup(1.0F, 1.3F, SoundEvents.BLOCK_NETHER_BRICKS_BREAK, SoundEvents.BLOCK_NETHER_BRICKS_STEP, SoundEvents.BLOCK_NETHER_BRICKS_PLACE, SoundEvents.BLOCK_NETHER_BRICKS_HIT, SoundEvents.BLOCK_NETHER_BRICKS_FALL);
@@ -96,12 +95,6 @@ public abstract class BlockMixin {
                             "lottablocks:obsidian_brick_wall",
                             "lottablocks:obsidian_pillar"
                             -> OBSIDIAN;
-                    case
-                            "minecraft:grass_block",
-                            "minecraft:podzol",
-                            "minecraft:mycelium",
-                            "minecraft:dirt_path"
-                            -> GRASS_BLOCK;
                     case
                             "minecraft:magma_block"
                             -> BlockSoundGroup.NETHERRACK;

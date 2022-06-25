@@ -7,6 +7,7 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
+import net.sydokiddo.auditory.Auditory;
 import net.sydokiddo.auditory.sound.ModSoundEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -25,16 +26,18 @@ public abstract class ItemDropSoundMixin {
     @Inject(at = @At("TAIL"), method = "dropItem(Lnet/minecraft/item/ItemStack;ZZ)Lnet/minecraft/entity/ItemEntity;")
     private void dropItem(ItemStack stack, boolean throwRandomly, boolean retainOwnership, CallbackInfoReturnable<ItemEntity> cir) {
 
-        if (retainOwnership && !stack.isEmpty() && (wait <= 0)) {
+        if (Auditory.getConfig().item_drop_sounds) {
 
-            wait = 1; // Waits about a second before playing the sound again
-            MinecraftClient client = MinecraftClient.getInstance();
-            assert client.player != null;
-            client.player.playSound(ModSoundEvents.ENTITY_PLAYER_DROP_ITEM, SoundCategory.PLAYERS, 0.3F, 1.0F);
-        }
-        else {
-            wait--; // Decreases the wait timer
-            if (wait < 0) wait = 0; // Sets the wait timer back to 0 if it goes below 0
+            if (retainOwnership && !stack.isEmpty() && (wait <= 0)) {
+
+                wait = 1; // Waits about a second before playing the sound again
+                MinecraftClient client = MinecraftClient.getInstance();
+                assert client.player != null;
+                client.player.playSound(ModSoundEvents.ENTITY_PLAYER_DROP_ITEM, SoundCategory.PLAYERS, 0.3F, 1.0F);
+            } else {
+                wait--; // Decreases the wait timer
+                if (wait < 0) wait = 0; // Sets the wait timer back to 0 if it goes below 0
+            }
         }
     }
 }

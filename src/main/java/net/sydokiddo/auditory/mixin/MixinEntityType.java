@@ -1,5 +1,6 @@
 package net.sydokiddo.auditory.mixin;
 
+import net.sydokiddo.auditory.Auditory;
 import net.sydokiddo.auditory.sound.ModSoundEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -25,13 +26,14 @@ public class MixinEntityType {
 
     @Inject(at=@At("RETURN"), method="spawnFromItemStack(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/SpawnReason;ZZ)Lnet/minecraft/entity/Entity;")
     public void spawnFromItemStack(ServerWorld world, ItemStack stack, PlayerEntity player, BlockPos pos, SpawnReason reason, boolean alignPosition, boolean invertY, CallbackInfoReturnable<Entity> ci) {
-        if (stack.getItem() instanceof SpawnEggItem) {
-            Entity e = ci.getReturnValue();
-            Box box = e.getBoundingBox();
-            Vec3d center = box.getCenter();
-            world.spawnParticles(new ItemStackParticleEffect(ParticleTypes.ITEM, stack), center.x, center.y, center.z, 20, box.getXLength()/2, box.getYLength()/2, box.getZLength()/2, 0.05);
-            e.playSound(ModSoundEvents.ITEM_SPAWN_EGG_USE, 1.0f, 1.0f);
+        if (Auditory.getConfig().item_use_sounds) {
+            if (stack.getItem() instanceof SpawnEggItem) {
+                Entity e = ci.getReturnValue();
+                Box box = e.getBoundingBox();
+                Vec3d center = box.getCenter();
+                world.spawnParticles(new ItemStackParticleEffect(ParticleTypes.ITEM, stack), center.x, center.y, center.z, 20, box.getXLength() / 2, box.getYLength() / 2, box.getZLength() / 2, 0.05);
+                e.playSound(ModSoundEvents.ITEM_SPAWN_EGG_USE, 1.0f, 1.0f);
+            }
         }
     }
-
 }

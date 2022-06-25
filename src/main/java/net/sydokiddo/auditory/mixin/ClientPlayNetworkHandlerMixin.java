@@ -2,6 +2,8 @@ package net.sydokiddo.auditory.mixin;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import net.sydokiddo.auditory.Auditory;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -32,41 +34,44 @@ public abstract class ClientPlayNetworkHandlerMixin {
     private void onEntityAttachSound(EntityAttachS2CPacket packet, CallbackInfo ci) {
         ClientPlayNetworkHandler clientPlayNetworkHandler = ((ClientPlayNetworkHandler) (Object) this);
 
-        World world = clientPlayNetworkHandler.getWorld();
-        MobEntity attachedEntity = (MobEntity) world.getEntityById(packet.getAttachedEntityId());
-        Entity newHoldingEntity = world.getEntityById(packet.getHoldingEntityId());
-        PlayerEntity p = MinecraftClient.getInstance().player;
+        if (Auditory.getConfig().interaction_sounds) {
 
-        if (newHoldingEntity == null) {
-            // Detaching Lead Sounds
-            assert attachedEntity != null;
-            Entity currentHoldingEntity = attachedEntity.getHoldingEntity();
+            World world = clientPlayNetworkHandler.getWorld();
+            MobEntity attachedEntity = (MobEntity) world.getEntityById(packet.getAttachedEntityId());
+            Entity newHoldingEntity = world.getEntityById(packet.getHoldingEntityId());
+            PlayerEntity p = MinecraftClient.getInstance().player;
 
-            if (!(currentHoldingEntity instanceof LeashKnotEntity)) {
-                // Detach from Player Sound
-                double x = attachedEntity.getX(), y = attachedEntity.getY(), z = attachedEntity.getZ();
-                world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_BREAK, SoundCategory.NEUTRAL, 1.0F, 1.0F);
-            } else {
-                if (world.getLevelProperties().getTime() != lastTime) {
-                    lastTime = world.getLevelProperties().getTime();
-                    leadKnotsDetatchedFromThisTickIds.clear();
-                }
-                if (!leadKnotsDetatchedFromThisTickIds.contains(currentHoldingEntity.getId())) {
-                    // Breaking Off Fence Lead Sound
-                    double x = currentHoldingEntity.getX(), y = currentHoldingEntity.getY(), z = currentHoldingEntity.getZ();
+            if (newHoldingEntity == null) {
+                // Detaching Lead Sounds
+                assert attachedEntity != null;
+                Entity currentHoldingEntity = attachedEntity.getHoldingEntity();
+
+                if (!(currentHoldingEntity instanceof LeashKnotEntity)) {
+                    // Detach from Player Sound
+                    double x = attachedEntity.getX(), y = attachedEntity.getY(), z = attachedEntity.getZ();
                     world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_BREAK, SoundCategory.NEUTRAL, 1.0F, 1.0F);
-                    leadKnotsDetatchedFromThisTickIds.add(currentHoldingEntity.getId());
+                } else {
+                    if (world.getLevelProperties().getTime() != lastTime) {
+                        lastTime = world.getLevelProperties().getTime();
+                        leadKnotsDetatchedFromThisTickIds.clear();
+                    }
+                    if (!leadKnotsDetatchedFromThisTickIds.contains(currentHoldingEntity.getId())) {
+                        // Breaking Off Fence Lead Sound
+                        double x = currentHoldingEntity.getX(), y = currentHoldingEntity.getY(), z = currentHoldingEntity.getZ();
+                        world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_BREAK, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+                        leadKnotsDetatchedFromThisTickIds.add(currentHoldingEntity.getId());
+                    }
                 }
+            } else if (!(newHoldingEntity instanceof LeashKnotEntity)) {
+                // Attach to Player Sound
+                assert attachedEntity != null;
+                double x = attachedEntity.getX(), y = attachedEntity.getY(), z = attachedEntity.getZ();
+                world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_PLACE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+            } else if (newHoldingEntity.age != 0) {
+                // Attach to Pre-Existing Fence Sound
+                double x = newHoldingEntity.getX(), y = newHoldingEntity.getY(), z = newHoldingEntity.getZ();
+                world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_PLACE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
             }
-        } else if (!(newHoldingEntity instanceof LeashKnotEntity)) {
-            // Attach to Player Sound
-            assert attachedEntity != null;
-            double x = attachedEntity.getX(), y = attachedEntity.getY(), z = attachedEntity.getZ();
-            world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_PLACE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
-        } else if (newHoldingEntity.age != 0) {
-            // Attach to Pre-Existing Fence Sound
-            double x = newHoldingEntity.getX(), y = newHoldingEntity.getY(), z = newHoldingEntity.getZ();
-            world.playSound(p, x, y, z, SoundEvents.ENTITY_LEASH_KNOT_PLACE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
         }
     }
 

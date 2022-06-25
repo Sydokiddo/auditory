@@ -12,6 +12,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.sydokiddo.auditory.Auditory;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -36,11 +37,13 @@ public class FlowerPotPlantMixin {
 
     @Inject(at = @At(value = "RETURN", target = "Lnet/minecraft/util/TypedActionResult;use(Ljava/lang/Object;)Lnet/minecraft/util/TypedActionResult;"), method = "onUse")
     public void onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> cir) {
-        MinecraftClient client = MinecraftClient.getInstance();
-        assert client.player != null;
-        boolean bl2 = this.isEmpty();
+        if (Auditory.getConfig().interaction_sounds) {
+            MinecraftClient client = MinecraftClient.getInstance();
+            assert client.player != null;
+            boolean bl2 = this.isEmpty();
             if (bl2) {
                 client.player.playSound(SoundEvents.BLOCK_HANGING_ROOTS_PLACE, SoundCategory.BLOCKS, 0.8F, 1.0F);
             }
         }
     }
+}

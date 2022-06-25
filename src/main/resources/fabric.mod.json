@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.sydokiddo.auditory.AuditoryClient"
+    ],
+    "modmenu": [
+      "net.sydokiddo.auditory.config.ModMenuCompatibility"
     ]
   },
   "mixins": [

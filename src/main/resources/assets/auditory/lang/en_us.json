@@ -1,4 +1,10 @@
 {
+  "text.autoconfig.auditory.title": "Auditory Configuration",
+  "text.autoconfig.auditory.option.block_sounds": "Block Sounds",
+  "text.autoconfig.auditory.option.item_use_sounds": "Item Use Sounds",
+  "text.autoconfig.auditory.option.item_drop_sounds": "Item Drop Sounds",
+  "text.autoconfig.auditory.option.interaction_sounds": "Interaction Sounds",
+  "text.autoconfig.auditory.option.entity_sounds": "Entity Sounds",
   "auditory.sound_reload_key":"Reload sound system",
   "auditory.category":"Auditory",
   "subtitles.item.bow.pulling": "Bow draws back",

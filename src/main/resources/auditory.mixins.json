@@ -9,16 +9,17 @@
     "blocks.FlowerPotPlantSoundMixin",
     "blocks.JukeboxDiscSoundMixin",
     "entities.BoatPlaceSoundMixin",
-    "entities.EnderPearlSoundMixin",
     "entities.MinecartPlaceSoundMixin",
     "entities.MixinEndermiteEntity",
     "entities.MixinSilverfishEntity",
-    "items.BowPullingSoundMixin",
+    "entities.ProjectileHitSoundMixin",
+    "items.EnderPearlSoundMixin",
     "items.InstrumentSoundMixin",
     "items.ItemDropSoundMixin",
     "items.SpawnEggUseSoundMixin"
   ],
   "client": [
+    "misc.SoundEngineAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

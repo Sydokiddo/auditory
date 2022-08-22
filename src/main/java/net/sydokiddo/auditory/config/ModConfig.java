@@ -2,28 +2,67 @@ package net.sydokiddo.auditory.config;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
-import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
+import me.shedaniel.autoconfig.annotation.ConfigEntry;
+
+// Mod Config
 
 @Config(name = "auditory")
 public class ModConfig implements ConfigData {
 
-    @Comment("If true, will play updated block " +
-            "breaking and placing sounds")
-    public boolean block_sounds = true;
+    // Block Sounds
 
-    @Comment("If true, will play item using sounds, " +
-            "such as Bow sounds, Ender Pearl sounds, etc.")
-    public boolean item_use_sounds = true;
+    @ConfigEntry.Gui.CollapsibleObject()
+    public BlockSounds block_sounds = new BlockSounds();
 
-    @Comment("If true, will play a popping sound " +
-            "whenever an item is dropped")
-    public boolean item_drop_sounds = true;
+    public static class BlockSounds {
 
-    @Comment("If true, will play sounds when interacting with " +
-            "specific blocks such as Jukeboxes, Flower Pots, etc.")
-    public boolean interaction_sounds = true;
+        @ConfigEntry.Gui.Tooltip
+        public boolean block_sounds = true;
 
-    @Comment("If true, will play entity sounds such as " +
-            "Silverfish slithering, Minecart/Boat placing, etc.")
-    public boolean entity_sounds = true;
+        @ConfigEntry.Gui.Tooltip
+        public boolean jukebox_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean flower_pot_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean cake_eating_sounds = true;
+    }
+
+    // Item Sounds
+
+    @ConfigEntry.Gui.CollapsibleObject()
+    public ItemSounds item_sounds = new ItemSounds();
+
+    public static class ItemSounds {
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean ender_pearl_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean spawn_egg_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean boat_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean minecart_sounds = true;
+    }
+
+    // Misc Sounds
+
+    @ConfigEntry.Gui.CollapsibleObject()
+    public MiscSounds misc_sounds = new MiscSounds();
+
+    public static class MiscSounds {
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean silverfish_step_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean item_drop_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean projectile_hit_sounds = true;
+    }
 }

@@ -12,6 +12,7 @@
     "minecraft:granite",
     "minecraft:granite_wall",
     "minecraft:granite_slab",
-    "minecraft:granite_stairs"
+    "minecraft:granite_stairs",
+    "minecraft:end_portal_frame"
   ]
 }

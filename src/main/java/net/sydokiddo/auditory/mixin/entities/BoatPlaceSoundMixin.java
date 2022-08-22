@@ -17,6 +17,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
+import net.sydokiddo.auditory.Auditory;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -65,7 +66,6 @@ public abstract class BoatPlaceSoundMixin extends Item {
                     }
                 }
             }
-
             if (hitResult.getType() == HitResult.Type.BLOCK) {
                 Boat boat = this.getBoat(level, hitResult);
                 boat.setType(this.type);
@@ -76,12 +76,13 @@ public abstract class BoatPlaceSoundMixin extends Item {
                     if (!level.isClientSide) {
                         level.addFreshEntity(boat);
                         level.gameEvent(player, GameEvent.ENTITY_PLACE, hitResult.getLocation());
-                        level.playSound(null, boat, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
+                        if (Auditory.getConfig().item_sounds.boat_sounds) {
+                            level.playSound(null, boat, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
+                        }
                         if (!player.getAbilities().instabuild) {
                             itemStack.shrink(1);
                         }
                     }
-
                     player.awardStat(Stats.ITEM_USED.get(this));
                     cir.setReturnValue(InteractionResultHolder.sidedSuccess(itemStack, level.isClientSide()));
                 }

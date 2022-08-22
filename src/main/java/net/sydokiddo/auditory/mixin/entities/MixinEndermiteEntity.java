@@ -15,7 +15,7 @@ public class MixinEndermiteEntity {
 
     @Inject(at = @At("TAIL"), method = "getMovementEmission", cancellable = true)
     public void playStepSounds(CallbackInfoReturnable<Entity.MovementEmission> cir) {
-        if (Auditory.getConfig().entity_sounds) {
+        if (Auditory.getConfig().misc_sounds.silverfish_step_sounds) {
             cir.setReturnValue(Entity.MovementEmission.ALL);
         }
     }

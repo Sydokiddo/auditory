@@ -48,6 +48,7 @@
       "auditory:block/shulker_box/step5"
     ]
   },
+
   "block.jukebox.use": {
     "sounds": [
       "auditory:block/jukebox/use1",
@@ -61,12 +62,14 @@
     ],
     "subtitle": "subtitles.block.jukebox.eject"
   },
+
   "item.bow.pulling": {
     "sounds": [
       "auditory:item/bow/pulling"
     ],
     "subtitle": "subtitles.item.bow.pulling"
   },
+
   "item.spawn_egg.use": {
     "sounds": [
       "auditory:item/spawn_egg/use1",
@@ -77,16 +80,111 @@
     ],
     "subtitle": "subtitles.item.spawn_egg.use"
   },
+
   "player.item.drop": {
     "sounds": [
       "auditory:entity/player/drop_item"
     ],
     "subtitle": "subtitles.entity.player.drop_item"
   },
+
   "block.spawner.break": {
     "sounds": [
       "auditory:block/spawner/break1"
     ],
     "subtitle": "subtitles.block.generic.break"
+  },
+
+  "block.chorus_plant.place": {
+    "sounds": [
+      "auditory:block/chorus_plant/place1",
+      "auditory:block/chorus_plant/place2",
+      "auditory:block/chorus_plant/place3",
+      "auditory:block/chorus_plant/place4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.chorus_plant.break": {
+    "sounds": [
+      "auditory:block/chorus_plant/place1",
+      "auditory:block/chorus_plant/place2",
+      "auditory:block/chorus_plant/place3",
+      "auditory:block/chorus_plant/place4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.chorus_plant.hit": {
+    "sounds": [
+      "auditory:block/chorus_plant/place1",
+      "auditory:block/chorus_plant/place2",
+      "auditory:block/chorus_plant/place3",
+      "auditory:block/chorus_plant/place4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.chorus_plant.step": {
+    "sounds": [
+      "auditory:block/chorus_plant/step1",
+      "auditory:block/chorus_plant/step2",
+      "auditory:block/chorus_plant/step3",
+      "auditory:block/chorus_plant/step4",
+      "auditory:block/chorus_plant/step5"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.chorus_plant.fall": {
+    "sounds": [
+      "auditory:block/chorus_plant/step1",
+      "auditory:block/chorus_plant/step2",
+      "auditory:block/chorus_plant/step3",
+      "auditory:block/chorus_plant/step4",
+      "auditory:block/chorus_plant/step5"
+    ]
+  },
+
+  "block.purpur.place": {
+    "sounds": [
+      "auditory:block/purpur/place1",
+      "auditory:block/purpur/place2",
+      "auditory:block/purpur/place3",
+      "auditory:block/purpur/place4",
+      "auditory:block/purpur/place5"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.purpur.break": {
+    "sounds": [
+      "auditory:block/purpur/place1",
+      "auditory:block/purpur/place2",
+      "auditory:block/purpur/place3",
+      "auditory:block/purpur/place4",
+      "auditory:block/purpur/place5"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.purpur.hit": {
+    "sounds": [
+      "auditory:block/purpur/place1",
+      "auditory:block/purpur/place2",
+      "auditory:block/purpur/place3",
+      "auditory:block/purpur/place4",
+      "auditory:block/purpur/place5"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.purpur.step": {
+    "sounds": [
+      "auditory:block/purpur/step1",
+      "auditory:block/purpur/step2",
+      "auditory:block/purpur/step3"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.purpur.fall": {
+    "sounds": [
+      "auditory:block/purpur/step1",
+      "auditory:block/purpur/step2",
+      "auditory:block/purpur/step3"
+    ]
   }
 }

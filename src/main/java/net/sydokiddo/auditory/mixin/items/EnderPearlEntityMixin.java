@@ -1,4 +1,4 @@
-package net.sydokiddo.auditory.mixin.entities;
+package net.sydokiddo.auditory.mixin.items;
 
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.server.level.ServerPlayer;
@@ -33,7 +33,7 @@ abstract class EnderPearlSoundMixin extends ThrowableItemProjectile {
 
     @Inject(method = "onHit", at = @At("HEAD"))
     protected void onHit(HitResult hitResult, CallbackInfo ci) {
-        if (Auditory.getConfig().item_use_sounds && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
+        if (Auditory.getConfig().item_sounds.ender_pearl_sounds && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
             Entity entity = this.getOwner();
             if (entity instanceof ServerPlayer serverPlayer) {
                 if (serverPlayer.connection.getConnection().isConnected() && serverPlayer.level == this.level && !serverPlayer.isSleeping()) {

@@ -23,6 +23,19 @@ public class ModSoundEvents {
     public static final SoundEvent BLOCK_SHULKER_BOX_PLACE = registerSoundEvent("block.shulker_box.place");
     public static final SoundEvent BLOCK_SHULKER_BOX_HIT = registerSoundEvent("block.shulker_box.hit");
     public static final SoundEvent BLOCK_SHULKER_BOX_FALL = registerSoundEvent("block.shulker_box.fall");
+
+    public static final SoundEvent BLOCK_PURPUR_BREAK = registerSoundEvent("block.purpur.break");
+    public static final SoundEvent BLOCK_PURPUR_STEP = registerSoundEvent("block.purpur.step");
+    public static final SoundEvent BLOCK_PURPUR_PLACE = registerSoundEvent("block.purpur.place");
+    public static final SoundEvent BLOCK_PURPUR_HIT = registerSoundEvent("block.purpur.hit");
+    public static final SoundEvent BLOCK_PURPUR_FALL = registerSoundEvent("block.purpur.fall");
+
+    public static final SoundEvent BLOCK_CHORUS_PLANT_BREAK = registerSoundEvent("block.chorus_plant.break");
+    public static final SoundEvent BLOCK_CHORUS_PLANT_STEP = registerSoundEvent("block.chorus_plant.step");
+    public static final SoundEvent BLOCK_CHORUS_PLANT_PLACE = registerSoundEvent("block.chorus_plant.place");
+    public static final SoundEvent BLOCK_CHORUS_PLANT_HIT = registerSoundEvent("block.chorus_plant.hit");
+    public static final SoundEvent BLOCK_CHORUS_PLANT_FALL = registerSoundEvent("block.chorus_plant.fall");
+
     public static final SoundEvent BLOCK_SPAWNER_BREAK = registerSoundEvent("block.spawner.break");
 
 // - Other Sounds:
@@ -42,6 +55,16 @@ public class ModSoundEvents {
     ModSoundEvents.BLOCK_SPAWNER_BREAK, SoundEvents.NETHERITE_BLOCK_STEP,
     SoundEvents.NETHERITE_BLOCK_PLACE, SoundEvents.NETHERITE_BLOCK_HIT,
     SoundEvents.NETHERITE_BLOCK_FALL);
+
+    public static final SoundType PURPUR = new SoundType(1f, 1f,
+    ModSoundEvents.BLOCK_PURPUR_BREAK, ModSoundEvents.BLOCK_PURPUR_STEP,
+    ModSoundEvents.BLOCK_PURPUR_PLACE, ModSoundEvents.BLOCK_PURPUR_HIT,
+    ModSoundEvents.BLOCK_PURPUR_FALL);
+
+    public static final SoundType CHORUS_PLANT = new SoundType(1f, 1f,
+    ModSoundEvents.BLOCK_CHORUS_PLANT_BREAK, ModSoundEvents.BLOCK_CHORUS_PLANT_STEP,
+    ModSoundEvents.BLOCK_CHORUS_PLANT_PLACE, ModSoundEvents.BLOCK_CHORUS_PLANT_HIT,
+    ModSoundEvents.BLOCK_CHORUS_PLANT_FALL);
 
     public static final SoundType STONE_ORE = new SoundType(1f, 0.9f,
     SoundEvents.NETHER_ORE_BREAK, SoundEvents.NETHER_ORE_STEP,

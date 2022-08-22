@@ -44,7 +44,6 @@ public abstract class FlowerPotPlantSoundMixin {
 
     @Inject(method = "use", at = @At("HEAD"), cancellable = true)
     public void use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult, CallbackInfoReturnable<InteractionResult> cir) {
-        if (Auditory.getConfig().item_use_sounds) {
             ItemStack itemStack = player.getItemInHand(interactionHand);
             Item item = itemStack.getItem();
             BlockState blockState2 = (item instanceof BlockItem ? POTTED_BY_CONTENT.getOrDefault(((BlockItem) item).getBlock(), Blocks.AIR) : Blocks.AIR).defaultBlockState();
@@ -69,11 +68,12 @@ public abstract class FlowerPotPlantSoundMixin {
                 }
 
                 level.gameEvent(player, GameEvent.BLOCK_CHANGE, blockPos);
-                level.playSound(player, blockPos, SoundEvents.HANGING_ROOTS_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
+                if (Auditory.getConfig().block_sounds.flower_pot_sounds) {
+                    level.playSound(player, blockPos, SoundEvents.HANGING_ROOTS_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
+                }
                 cir.setReturnValue(InteractionResult.sidedSuccess(level.isClientSide));
             } else {
                 cir.setReturnValue(InteractionResult.CONSUME);
             }
         }
     }
-}

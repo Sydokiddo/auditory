@@ -6,17 +6,19 @@
   "name": "Auditory",
   "description": "A mod that expands and improves upon the sound and audio aspects of Minecraft!",
   "authors": [
-    "Sydokiddo"
+    "Sydokiddo (Developer)",
+    "AmbientUnder (Additional Sounds)"
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/auditory",
+    "issues": "https://github.com/Sydokiddo/auditory/issues",
     "sources": "https://github.com/Sydokiddo/auditory"
   },
 
   "license": "MIT",
   "icon": "assets/auditory/icon.png",
-
   "environment": "*",
+
   "entrypoints": {
     "main": [
       "net.sydokiddo.auditory.Auditory"

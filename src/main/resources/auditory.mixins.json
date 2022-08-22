@@ -12,7 +12,6 @@
     "entities.MinecartPlaceSoundMixin",
     "entities.MixinEndermiteEntity",
     "entities.MixinSilverfishEntity",
-    "entities.ProjectileHitSoundMixin",
     "items.EnderPearlSoundMixin",
     "items.InstrumentSoundMixin",
     "items.ItemDropSoundMixin",

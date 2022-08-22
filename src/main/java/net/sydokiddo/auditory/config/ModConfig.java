@@ -61,8 +61,5 @@ public class ModConfig implements ConfigData {
 
         @ConfigEntry.Gui.Tooltip
         public boolean item_drop_sounds = true;
-
-        @ConfigEntry.Gui.Tooltip
-        public boolean projectile_hit_sounds = true;
     }
 }

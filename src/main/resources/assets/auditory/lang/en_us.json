@@ -5,8 +5,10 @@
   "text.autoconfig.auditory.option.item_drop_sounds": "Item Drop Sounds",
   "text.autoconfig.auditory.option.interaction_sounds": "Interaction Sounds",
   "text.autoconfig.auditory.option.entity_sounds": "Entity Sounds",
+
   "auditory.sound_reload_key":"Reload sound system",
   "auditory.category":"Auditory",
+
   "subtitles.item.bow.pulling": "Bow draws back",
   "subtitles.entity.player.drop_item": "Item drops",
   "subtitles.item.ender_pearl.teleport": "Player teleports",

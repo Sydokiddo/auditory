@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:iron_bars",
+    "minecraft:iron_door",
+    "minecraft:iron_trapdoor",
+    "minecraft:iron_block",
+    "minecraft:observer",
+    "minecraft:dropper",
+    "minecraft:dispenser",
+    "minecraft:hopper",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:heavy_weighted_pressure_plate"
+  ]
+}

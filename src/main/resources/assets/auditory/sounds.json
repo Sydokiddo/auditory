@@ -67,13 +67,6 @@
     ],
     "subtitle": "subtitles.item.bow.pulling"
   },
-  "item.ender_pearl.teleport": {
-    "sounds": [
-      "auditory:item/ender_pearl/portal",
-      "auditory:item/ender_pearl/portal2"
-    ],
-    "subtitle": "subtitles.item.ender_pearl.teleport"
-  },
   "item.spawn_egg.use": {
     "sounds": [
       "auditory:item/spawn_egg/use1",

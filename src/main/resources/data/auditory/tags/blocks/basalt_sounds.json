@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:end_stone",
+    "minecraft:andesite",
+    "minecraft:andesite_wall",
+    "minecraft:andesite_slab",
+    "minecraft:andesite_stairs",
+    "minecraft:diorite",
+    "minecraft:diorite_wall",
+    "minecraft:diorite_stairs",
+    "minecraft:diorite_slab",
+    "minecraft:granite",
+    "minecraft:granite_wall",
+    "minecraft:granite_slab",
+    "minecraft:granite_stairs"
+  ]
+}

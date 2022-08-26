@@ -6,6 +6,7 @@
   "mixins": [
     "blocks.BlockMixin",
     "blocks.CakeEatingSoundMixin",
+    "blocks.FallOnBlockMixin",
     "blocks.FlowerPotPlantSoundMixin",
     "blocks.JukeboxDiscSoundMixin",
     "entities.BoatPlaceSoundMixin",

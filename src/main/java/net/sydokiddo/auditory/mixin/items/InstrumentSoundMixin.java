@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-// Changes instruments to play on the Neutral sound category instead of the Records category
+// Changes instruments to play on the Players sound category instead of the Records category
 // This fixes issues with other mods that can cause instrument sounds to cut off music abruptly
 
 @Mixin(InstrumentItem.class)
@@ -22,7 +22,7 @@ public class InstrumentSoundMixin {
     private static void play(Level level, Player player, Instrument instrument, CallbackInfo ci) {
         SoundEvent soundEvent = instrument.soundEvent();
         float f = instrument.range() / 16.0F;
-        level.playSound(player, player, soundEvent, SoundSource.NEUTRAL, f, 1.0F);
+        level.playSound(player, player, soundEvent, SoundSource.PLAYERS, f, 1.0F);
         level.gameEvent(GameEvent.INSTRUMENT_PLAY, player.position(), GameEvent.Context.of(player));
     }
 }

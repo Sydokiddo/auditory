@@ -65,9 +65,38 @@
 
   "item.bow.pulling": {
     "sounds": [
-      "auditory:item/bow/pulling"
+      "auditory:item/bow/pulling1",
+      "auditory:item/bow/pulling2",
+      "auditory:item/bow/pulling3",
+      "auditory:item/bow/pulling4"
     ],
     "subtitle": "subtitles.item.bow.pulling"
+  },
+  "item.sword.swing": {
+    "sounds": [
+      "auditory:item/sword/swing1",
+      "auditory:item/sword/swing2",
+      "auditory:item/sword/swing3",
+      "auditory:item/sword/swing4",
+      "auditory:item/sword/swing5"
+    ],
+    "subtitle": "subtitles.item.weapon.swing"
+  },
+  "item.axe.swing": {
+    "sounds": [
+      "auditory:item/axe/swing1",
+      "auditory:item/axe/swing2",
+      "auditory:item/axe/swing3"
+    ],
+    "subtitle": "subtitles.item.weapon.swing"
+  },
+  "item.tool.swing": {
+    "sounds": [
+      "auditory:item/tool/swing1",
+      "auditory:item/tool/swing2",
+      "auditory:item/tool/swing3"
+    ],
+    "subtitle": "subtitles.item.tool.swing"
   },
 
   "item.spawn_egg.use": {

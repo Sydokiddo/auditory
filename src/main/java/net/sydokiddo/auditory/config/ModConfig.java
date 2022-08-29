@@ -37,6 +37,9 @@ public class ModConfig implements ConfigData {
     public static class ItemSounds {
 
         @ConfigEntry.Gui.Tooltip
+        public boolean weapon_swing_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
         public boolean ender_pearl_sounds = true;
 
         @ConfigEntry.Gui.Tooltip

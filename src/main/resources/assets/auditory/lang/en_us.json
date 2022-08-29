@@ -4,6 +4,8 @@
   "auditory.category":"Auditory",
 
   "subtitles.item.bow.pulling": "Bow draws back",
+  "subtitles.item.tool.swing": "Tool swings",
+  "subtitles.item.weapon.swing": "Weapon swings",
   "subtitles.entity.player.drop_item": "Item drops",
   "subtitles.item.spawn_egg.use": "Spawn Egg cracks",
   "subtitles.block.jukebox.use": "Disc inserted into Jukebox",
@@ -22,6 +24,8 @@
   "text.autoconfig.auditory.option.block_sounds.cake_eating_sounds.@Tooltip": "Cakes will play an eating sound when eaten by a player",
 
   "text.autoconfig.auditory.option.item_sounds": "Item Sounds",
+  "text.autoconfig.auditory.option.item_sounds.weapon_sounds": "Weapon Sounds",
+  "text.autoconfig.auditory.option.item_sounds.weapon_sounds.@Tooltip": "Weapons such as Swords and Axes will make slashing sounds when the player swings them",
   "text.autoconfig.auditory.option.item_sounds.ender_pearl_sounds": "Ender Pearl Sounds",
   "text.autoconfig.auditory.option.item_sounds.ender_pearl_sounds.@Tooltip": "Ender Pearls will make a teleporting sound when the player teleports using them",
   "text.autoconfig.auditory.option.item_sounds.spawn_egg_sounds": "Spawn Egg Cracking Sounds",

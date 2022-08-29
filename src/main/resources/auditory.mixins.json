@@ -16,7 +16,8 @@
     "items.EnderPearlSoundMixin",
     "items.InstrumentSoundMixin",
     "items.ItemDropSoundMixin",
-    "items.SpawnEggUseSoundMixin"
+    "items.SpawnEggUseSoundMixin",
+    "items.WeaponSwingMixin"
   ],
   "client": [
     "misc.SoundEngineAccessor"

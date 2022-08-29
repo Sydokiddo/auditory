@@ -40,6 +40,9 @@ public class ModConfig implements ConfigData {
         public boolean weapon_swing_sounds = true;
 
         @ConfigEntry.Gui.Tooltip
+        public boolean bow_and_trident_pullback_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
         public boolean ender_pearl_sounds = true;
 
         @ConfigEntry.Gui.Tooltip

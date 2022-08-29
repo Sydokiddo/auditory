@@ -14,6 +14,7 @@ public class ModSoundEvents {
 // - Item Sounds:
 
     public static final SoundEvent ITEM_BOW_PULLING = registerSoundEvent("item.bow.pulling");
+    public static final SoundEvent ITEM_TRIDENT_SWING = registerSoundEvent("item.trident.swing");
     public static final SoundEvent ITEM_SWORD_SWING = registerSoundEvent("item.sword.swing");
     public static final SoundEvent ITEM_AXE_SWING = registerSoundEvent("item.axe.swing");
     public static final SoundEvent ITEM_TOOL_SWING = registerSoundEvent("item.tool.swing");

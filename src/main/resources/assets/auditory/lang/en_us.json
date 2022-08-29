@@ -4,6 +4,7 @@
   "auditory.category":"Auditory",
 
   "subtitles.item.bow.pulling": "Bow draws back",
+  "subtitles.item.trident.swing": "Trident draws back",
   "subtitles.item.tool.swing": "Tool swings",
   "subtitles.item.weapon.swing": "Weapon swings",
   "subtitles.entity.player.drop_item": "Item drops",
@@ -24,8 +25,10 @@
   "text.autoconfig.auditory.option.block_sounds.cake_eating_sounds.@Tooltip": "Cakes will play an eating sound when eaten by a player",
 
   "text.autoconfig.auditory.option.item_sounds": "Item Sounds",
-  "text.autoconfig.auditory.option.item_sounds.weapon_sounds": "Weapon Sounds",
-  "text.autoconfig.auditory.option.item_sounds.weapon_sounds.@Tooltip": "Weapons such as Swords and Axes will make slashing sounds when the player swings them",
+  "text.autoconfig.auditory.option.item_sounds.weapon_swing_sounds": "Weapon Swing Sounds",
+  "text.autoconfig.auditory.option.item_sounds.weapon_swing_sounds.@Tooltip": "Weapons and tools will make various slashing sounds when the player swings them",
+  "text.autoconfig.auditory.option.item_sounds.bow_and_trident_pullback_sounds": "Bow and Trident Pullback Sounds",
+  "text.autoconfig.auditory.option.item_sounds.bow_and_trident_pullback_sounds.@Tooltip": "Bows and Tridents will make a sound when they are being drawn back",
   "text.autoconfig.auditory.option.item_sounds.ender_pearl_sounds": "Ender Pearl Sounds",
   "text.autoconfig.auditory.option.item_sounds.ender_pearl_sounds.@Tooltip": "Ender Pearls will make a teleporting sound when the player teleports using them",
   "text.autoconfig.auditory.option.item_sounds.spawn_egg_sounds": "Spawn Egg Cracking Sounds",

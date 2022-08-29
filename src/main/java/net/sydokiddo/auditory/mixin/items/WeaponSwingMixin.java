@@ -41,22 +41,27 @@ public abstract class WeaponSwingMixin extends Entity {
 
     @Unique
     private static void playSwordSounds(Entity entity) {
-        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ModSoundEvents.ITEM_SWORD_SWING, SoundSource.PLAYERS, 0.2F, 0.8f + entity.level.random.nextFloat() * 0.4F);
+        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ModSoundEvents.ITEM_SWORD_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + entity.level.random.nextFloat() * 0.4F);
     }
 
     @Unique
     private static void playAxeSounds(Entity entity) {
-        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ModSoundEvents.ITEM_AXE_SWING, SoundSource.PLAYERS, 0.2F, 0.8f + entity.level.random.nextFloat() * 0.4F);
+        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ModSoundEvents.ITEM_AXE_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + entity.level.random.nextFloat() * 0.4F);
     }
 
     @Unique
     private static void playToolSounds(Entity entity) {
-        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ModSoundEvents.ITEM_TOOL_SWING, SoundSource.PLAYERS, 0.2F, 0.8f + entity.level.random.nextFloat() * 0.4F);
+        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ModSoundEvents.ITEM_TOOL_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + entity.level.random.nextFloat() * 0.4F);
+    }
+
+    @Unique
+    private static void playLightweightToolSounds(Entity entity) {
+        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ModSoundEvents.ITEM_TOOL_SWING, SoundSource.PLAYERS, 0.1F, 1.4f + entity.level.random.nextFloat() * 0.8F);
     }
 
     @Unique
     private static void playEmptyHandSounds(Entity entity) {
-        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.PLAYER_ATTACK_WEAK, SoundSource.PLAYERS, 0.2F, 0.8f + entity.level.random.nextFloat() * 0.4F);
+        entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.PLAYER_ATTACK_WEAK, SoundSource.PLAYERS, 0.1F, 0.8f + entity.level.random.nextFloat() * 0.4F);
     }
 
     @Inject(at = @At("HEAD"), method = "swing(Lnet/minecraft/world/InteractionHand;Z)V")
@@ -106,6 +111,12 @@ public abstract class WeaponSwingMixin extends Entity {
 
                     if (itemStack.getItem() instanceof HoeItem) {
                         playToolSounds(this);
+                    }
+
+                    // Shear Sounds
+
+                    if (itemStack.getItem() instanceof ShearsItem) {
+                        playLightweightToolSounds(this);
                     }
 
                     // Empty Hand Sounds

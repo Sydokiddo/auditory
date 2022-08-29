@@ -13,10 +13,12 @@
     "entities.MinecartPlaceSoundMixin",
     "entities.MixinEndermiteEntity",
     "entities.MixinSilverfishEntity",
+    "items.BowPullbackSound",
     "items.EnderPearlSoundMixin",
     "items.InstrumentSoundMixin",
     "items.ItemDropSoundMixin",
     "items.SpawnEggUseSoundMixin",
+    "items.TridentPullbackSound",
     "items.WeaponSwingMixin"
   ],
   "client": [

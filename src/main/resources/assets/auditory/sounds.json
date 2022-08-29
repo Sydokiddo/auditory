@@ -98,6 +98,14 @@
     ],
     "subtitle": "subtitles.item.tool.swing"
   },
+  "item.trident.swing": {
+    "sounds": [
+      "auditory:item/tool/swing1",
+      "auditory:item/tool/swing2",
+      "auditory:item/tool/swing3"
+    ],
+    "subtitle": "subtitles.item.trident.swing"
+  },
 
   "item.spawn_egg.use": {
     "sounds": [

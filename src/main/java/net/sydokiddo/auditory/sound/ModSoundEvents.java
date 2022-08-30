@@ -19,6 +19,7 @@ public class ModSoundEvents {
     public static final SoundEvent ITEM_AXE_SWING = registerSoundEvent("item.axe.swing");
     public static final SoundEvent ITEM_TOOL_SWING = registerSoundEvent("item.tool.swing");
     public static final SoundEvent ITEM_SPAWN_EGG_USE = registerSoundEvent("item.spawn_egg.use");
+    public static final SoundEvent ITEM_SHIELD_RAISE = registerSoundEvent("item.shield.raise");
 
 // - Block Sounds:
 

@@ -37,22 +37,60 @@ public class ModConfig implements ConfigData {
     public static class ItemSounds {
 
         @ConfigEntry.Gui.Tooltip
-        public boolean weapon_swing_sounds = true;
-
-        @ConfigEntry.Gui.Tooltip
-        public boolean bow_and_trident_pullback_sounds = true;
-
-        @ConfigEntry.Gui.Tooltip
         public boolean ender_pearl_sounds = true;
 
         @ConfigEntry.Gui.Tooltip
         public boolean spawn_egg_sounds = true;
 
         @ConfigEntry.Gui.Tooltip
+        public boolean lead_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
         public boolean boat_sounds = true;
 
         @ConfigEntry.Gui.Tooltip
         public boolean minecart_sounds = true;
+    }
+
+    // Weapon Sounds
+
+    @ConfigEntry.Gui.CollapsibleObject()
+    public WeaponSounds weapon_sounds = new WeaponSounds();
+
+    public static class WeaponSounds {
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean fist_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean sword_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean axe_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean pickaxe_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean shovel_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean hoe_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean trident_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean shear_swinging_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean bow_pullback_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean trident_pullback_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean shield_blocking_sounds = true;
     }
 
     // Misc Sounds

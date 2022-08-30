@@ -30,14 +30,14 @@ public abstract class TridentPullbackSound {
 
         } else if (EnchantmentHelper.getRiptide(itemStack) > 0 && player.isInWaterOrRain()) {
 
-            if (Auditory.getConfig().item_sounds.bow_and_trident_pullback_sounds) {
+            if (Auditory.getConfig().weapon_sounds.trident_pullback_sounds) {
                 level.playSound(null, player.getX(), player.getY(), player.getZ(), ModSoundEvents.ITEM_TRIDENT_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + player.level.random.nextFloat() * 0.4F);
             }
 
         } else {
             player.startUsingItem(interactionHand);
 
-            if (Auditory.getConfig().item_sounds.bow_and_trident_pullback_sounds) {
+            if (Auditory.getConfig().weapon_sounds.trident_pullback_sounds) {
                 level.playSound(null, player.getX(), player.getY(), player.getZ(), ModSoundEvents.ITEM_TRIDENT_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + player.level.random.nextFloat() * 0.4F);
             }
 

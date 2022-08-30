@@ -106,6 +106,15 @@
     ],
     "subtitle": "subtitles.item.trident.swing"
   },
+  "item.shield.raise": {
+    "sounds": [
+      "auditory:item/shield/raise1",
+      "auditory:item/shield/raise2",
+      "auditory:item/shield/raise3",
+      "auditory:item/shield/raise4"
+    ],
+    "subtitle": "subtitles.item.shield.raise"
+  },
 
   "item.spawn_egg.use": {
     "sounds": [

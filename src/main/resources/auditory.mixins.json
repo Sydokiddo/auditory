@@ -17,6 +17,8 @@
     "items.EnderPearlSoundMixin",
     "items.InstrumentSoundMixin",
     "items.ItemDropSoundMixin",
+    "items.LeadAttachSoundMixin",
+    "items.ShieldBlockSoundMixin",
     "items.SpawnEggUseSoundMixin",
     "items.TridentPullbackSound",
     "items.WeaponSwingMixin"

@@ -73,58 +73,54 @@ public abstract class WeaponSwingMixin extends Entity {
             ItemStack itemStack = this.getItemInHand(interactionHand);
             if (this.level instanceof ServerLevel) {
                 ClientboundAnimatePacket clientboundAnimatePacket = new ClientboundAnimatePacket(this, interactionHand == InteractionHand.MAIN_HAND ? 0 : 3);
-                ServerChunkCache serverChunkCache = ((ServerLevel)this.level).getChunkSource();
+                ServerChunkCache serverChunkCache = ((ServerLevel) this.level).getChunkSource();
 
-                if (Auditory.getConfig().item_sounds.weapon_swing_sounds) {
+                // Sword Sounds
 
-                    // Sword Sounds
+                if (itemStack.getItem() instanceof SwordItem && Auditory.getConfig().weapon_sounds.sword_swinging_sounds) {
+                    playSwordSounds(this);
+                }
 
-                    if (itemStack.getItem() instanceof SwordItem) {
-                        playSwordSounds(this);
-                    }
+                // Axe Sounds
 
-                    // Axe Sounds
+                if (itemStack.getItem() instanceof AxeItem && Auditory.getConfig().weapon_sounds.axe_swinging_sounds) {
+                    playAxeSounds(this);
+                }
 
-                    if (itemStack.getItem() instanceof AxeItem) {
-                        playAxeSounds(this);
-                    }
+                // Trident Sounds
 
-                    // Trident Sounds
+                if (itemStack.getItem() instanceof TridentItem && Auditory.getConfig().weapon_sounds.trident_swinging_sounds) {
+                    playSwordSounds(this);
+                }
 
-                    if (itemStack.getItem() instanceof TridentItem) {
-                        playSwordSounds(this);
-                    }
+                // Pickaxe Sounds
 
-                    // Pickaxe Sounds
+                if (itemStack.getItem() instanceof PickaxeItem && Auditory.getConfig().weapon_sounds.pickaxe_swinging_sounds) {
+                    playToolSounds(this);
+                }
 
-                    if (itemStack.getItem() instanceof PickaxeItem) {
-                        playToolSounds(this);
-                    }
+                // Shovel Sounds
 
-                    // Shovel Sounds
+                if (itemStack.getItem() instanceof ShovelItem && Auditory.getConfig().weapon_sounds.shovel_swinging_sounds) {
+                    playToolSounds(this);
+                }
 
-                    if (itemStack.getItem() instanceof ShovelItem) {
-                        playToolSounds(this);
-                    }
+                // Hoe Sounds
 
-                    // Hoe Sounds
+                if (itemStack.getItem() instanceof HoeItem && Auditory.getConfig().weapon_sounds.hoe_swinging_sounds) {
+                    playToolSounds(this);
+                }
 
-                    if (itemStack.getItem() instanceof HoeItem) {
-                        playToolSounds(this);
-                    }
+                // Shear Sounds
 
-                    // Shear Sounds
+                if (itemStack.getItem() instanceof ShearsItem && Auditory.getConfig().weapon_sounds.shear_swinging_sounds) {
+                    playLightweightToolSounds(this);
+                }
 
-                    if (itemStack.getItem() instanceof ShearsItem) {
-                        playLightweightToolSounds(this);
-                    }
+                // Empty Hand Sounds
 
-                    // Empty Hand Sounds
-
-                    if (itemStack.isEmpty()) {
-                        playEmptyHandSounds(this);
-                    }
-
+                if (itemStack.isEmpty() && Auditory.getConfig().weapon_sounds.fist_swinging_sounds) {
+                    playEmptyHandSounds(this);
                 }
 
                 if (bl) {

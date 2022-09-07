@@ -43,6 +43,18 @@ public class ModSoundEvents {
 
     public static final SoundEvent BLOCK_SPAWNER_BREAK = registerSoundEvent("block.spawner.break");
 
+    public static final SoundEvent BLOCK_ICE_BREAK = registerSoundEvent("block.ice.break");
+    public static final SoundEvent BLOCK_ICE_STEP = registerSoundEvent("block.ice.step");
+    public static final SoundEvent BLOCK_ICE_PLACE = registerSoundEvent("block.ice.place");
+    public static final SoundEvent BLOCK_ICE_HIT = registerSoundEvent("block.ice.hit");
+    public static final SoundEvent BLOCK_ICE_FALL = registerSoundEvent("block.ice.fall");
+
+    public static final SoundEvent BLOCK_GOURD_BREAK = registerSoundEvent("block.gourd.break");
+    public static final SoundEvent BLOCK_GOURD_STEP = registerSoundEvent("block.gourd.step");
+    public static final SoundEvent BLOCK_GOURD_PLACE = registerSoundEvent("block.gourd.place");
+    public static final SoundEvent BLOCK_GOURD_HIT = registerSoundEvent("block.gourd.hit");
+    public static final SoundEvent BLOCK_GOURD_FALL = registerSoundEvent("block.gourd.fall");
+
 // - Other Sounds:
 
     public static final SoundEvent ENTITY_PLAYER_DROP_ITEM = registerSoundEvent("player.item.drop");
@@ -50,6 +62,16 @@ public class ModSoundEvents {
     public static final SoundEvent BLOCK_JUKEBOX_EJECT = registerSoundEvent("block.jukebox.eject");
 
 // Sound Groups:
+
+    public static final SoundType ICE = new SoundType(1f, 1f,
+    ModSoundEvents.BLOCK_ICE_BREAK, ModSoundEvents.BLOCK_ICE_STEP,
+    ModSoundEvents.BLOCK_ICE_PLACE, ModSoundEvents.BLOCK_ICE_HIT,
+    ModSoundEvents.BLOCK_ICE_FALL);
+
+    public static final SoundType GOURD = new SoundType(1f, 1f,
+    ModSoundEvents.BLOCK_GOURD_BREAK, ModSoundEvents.BLOCK_GOURD_STEP,
+    ModSoundEvents.BLOCK_GOURD_PLACE, ModSoundEvents.BLOCK_GOURD_HIT,
+    ModSoundEvents.BLOCK_GOURD_FALL);
 
     public static final SoundType SHULKER_BOX = new SoundType(1f, 1f,
     ModSoundEvents.BLOCK_SHULKER_BOX_BREAK, ModSoundEvents.BLOCK_SHULKER_BOX_STEP,

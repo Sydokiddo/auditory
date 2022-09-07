@@ -33,4 +33,8 @@ public class AuditoryTags {
     public static final TagKey<Block> SAND_SOUNDS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation("auditory", "sand_sounds"));
     public static final TagKey<Block> CHORUS_PLANT_SOUNDS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation("auditory", "chorus_plant_sounds"));
     public static final TagKey<Block> PURPUR_SOUNDS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation("auditory", "purpur_sounds"));
+    public static final TagKey<Block> ICE_SOUNDS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation("auditory", "ice_sounds"));
+    public static final TagKey<Block> GOURD_SOUNDS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation("auditory", "gourd_sounds"));
+    public static final TagKey<Block> MUSHROOM_SOUNDS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation("auditory", "mushroom_sounds"));
+    public static final TagKey<Block> MUSHROOM_STEM_SOUNDS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation("auditory", "mushroom_stem_sounds"));
 }

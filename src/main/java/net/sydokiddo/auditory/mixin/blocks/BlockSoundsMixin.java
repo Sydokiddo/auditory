@@ -108,12 +108,28 @@ abstract class BlockMixin extends BlockBehaviour {
                 info.setReturnValue(SoundType.WOOD);
             }
 
+            if (state.is(AuditoryTags.MUSHROOM_SOUNDS)) {
+                info.setReturnValue(SoundType.WART_BLOCK);
+            }
+
+            if (state.is(AuditoryTags.MUSHROOM_STEM_SOUNDS)) {
+                info.setReturnValue(SoundType.STEM);
+            }
+
             if (state.is(AuditoryTags.PURPUR_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
                 info.setReturnValue(ModSoundEvents.PURPUR);
             }
 
             if (state.is(AuditoryTags.CHORUS_PLANT_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
                 info.setReturnValue(ModSoundEvents.CHORUS_PLANT);
+            }
+
+            if (state.is(AuditoryTags.ICE_SOUNDS)) {
+                info.setReturnValue(ModSoundEvents.ICE);
+            }
+
+            if (state.is(AuditoryTags.GOURD_SOUNDS)) {
+                info.setReturnValue(ModSoundEvents.GOURD);
             }
         }
     }

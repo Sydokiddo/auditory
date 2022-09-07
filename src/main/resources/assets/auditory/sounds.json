@@ -232,5 +232,95 @@
       "auditory:block/purpur/step2",
       "auditory:block/purpur/step3"
     ]
+  },
+
+  "block.ice.place": {
+    "sounds": [
+      "auditory:block/ice/place1",
+      "auditory:block/ice/place2",
+      "auditory:block/ice/place3",
+      "auditory:block/ice/place4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.ice.break": {
+    "sounds": [
+      "auditory:block/ice/break1",
+      "auditory:block/ice/break2",
+      "auditory:block/ice/break3"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.ice.hit": {
+    "sounds": [
+      "auditory:block/ice/break1",
+      "auditory:block/ice/break2",
+      "auditory:block/ice/break3"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.ice.step": {
+    "sounds": [
+      "auditory:block/ice/step1",
+      "auditory:block/ice/step2",
+      "auditory:block/ice/step3",
+      "auditory:block/ice/step4",
+      "auditory:block/ice/step5"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.ice.fall": {
+    "sounds": [
+      "auditory:block/ice/step1",
+      "auditory:block/ice/step2",
+      "auditory:block/ice/step3",
+      "auditory:block/ice/step4",
+      "auditory:block/ice/step5"
+    ]
+  },
+
+  "block.gourd.place": {
+    "sounds": [
+      "auditory:block/gourd/break1",
+      "auditory:block/gourd/break2",
+      "auditory:block/gourd/break3",
+      "auditory:block/gourd/break4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.gourd.break": {
+    "sounds": [
+      "auditory:block/gourd/break1",
+      "auditory:block/gourd/break2",
+      "auditory:block/gourd/break3",
+      "auditory:block/gourd/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.gourd.hit": {
+    "sounds": [
+      "auditory:block/gourd/break1",
+      "auditory:block/gourd/break2",
+      "auditory:block/gourd/break3",
+      "auditory:block/gourd/break4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.gourd.step": {
+    "sounds": [
+      "auditory:block/gourd/step1",
+      "auditory:block/gourd/step2",
+      "auditory:block/gourd/step3",
+      "auditory:block/gourd/step4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.gourd.fall": {
+    "sounds": [
+      "auditory:block/gourd/step1",
+      "auditory:block/gourd/step2",
+      "auditory:block/gourd/step3",
+      "auditory:block/gourd/step4"
+    ]
   }
 }

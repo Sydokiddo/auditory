@@ -1,6 +1,5 @@
 {
   "values": [
-    "minecraft:end_stone",
     "minecraft:andesite",
     "minecraft:andesite_wall",
     "minecraft:andesite_slab",
@@ -12,7 +11,6 @@
     "minecraft:granite",
     "minecraft:granite_wall",
     "minecraft:granite_slab",
-    "minecraft:granite_stairs",
-    "minecraft:end_portal_frame"
+    "minecraft:granite_stairs"
   ]
 }

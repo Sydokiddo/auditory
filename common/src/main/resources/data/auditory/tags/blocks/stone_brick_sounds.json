@@ -1,0 +1,18 @@
+{
+  "values": [
+    "minecraft:stone_brick_slab",
+    "minecraft:infested_stone_bricks",
+    "minecraft:infested_mossy_stone_bricks",
+    "minecraft:infested_cracked_stone_bricks",
+    "minecraft:infested_chiseled_stone_bricks",
+    "minecraft:stone_bricks",
+    "minecraft:mossy_stone_bricks",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:chiseled_stone_bricks",
+    "minecraft:stone_brick_stairs",
+    "minecraft:mossy_stone_brick_wall",
+    "minecraft:stone_brick_wall",
+    "minecraft:mossy_stone_brick_stairs",
+    "minecraft:mossy_stone_brick_slab"
+  ]
+}

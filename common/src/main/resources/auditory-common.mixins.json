@@ -1,11 +1,28 @@
 {
   "required": true,
-  "package": "dev.ebo2022.spookify.core.mixin",
+  "package": "net.sydokiddo.auditory.core.mixin",
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "client": [
+    "SoundEngineAccessor"
   ],
   "mixins": [
+    "BlockMixin",
+    "BoatItemMixin",
+    "BowItemMixin",
+    "CakeBlockMixin",
+    "EndermiteMixin",
+    "EntityTypeMixin",
+    "FlowerPotBlockMixin",
+    "JukeboxBlockMixin",
+    "LivingEntityMixin",
+    "MinecartItemMixin",
+    "MobMixin",
+    "PlayerMixin",
+    "ShieldItemMixin",
+    "SilverfishMixin",
+    "ThrownEnderpearlMixin",
+    "TridentItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

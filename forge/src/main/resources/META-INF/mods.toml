@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "MIT"
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+authors = "Sydokiddo (Developer), AmbientUnder (Additional Sounds), ebo2022 (Architectury Port)"
+description = "A mod that expands and improves upon the sound and audio aspects of Minecraft!"
+
+[modproperties.${id}]
+catalogueImageIcon="icon.png"
+
+[[dependencies.${id}]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "pollen"
+mandatory = true
+versionRange = "[1.4.9,)"
+ordering = "BEFORE"
+side = "BOTH"

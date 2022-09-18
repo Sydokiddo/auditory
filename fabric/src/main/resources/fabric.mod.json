@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "A mod that expands and improves upon the sound and audio aspects of Minecraft!",
+  "authors": [
+    "Sydokiddo (Developer)",
+    "AmbientUnder (Additional Sounds)",
+    "ebo2022 (Architectury Port)"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/auditory",
+    "issues": "https://github.com/Sydokiddo/auditory/issues",
+    "sources": "https://github.com/Sydokiddo/auditory"
+  },
+  "license": "MIT",
+  "icon": "assets/auditory/icon.png",
+  "mixins": [
+    "${id}-common.mixins.json"
+  ],
+  "entrypoints": {
+    "main": [
+      "net.sydokiddo.auditory.core.fabric.AuditoryFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": "1.18.2",
+    "pollen": ">=1.5.0 <2.0.0",
+  }
+}

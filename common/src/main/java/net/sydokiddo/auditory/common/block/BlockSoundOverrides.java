@@ -7,16 +7,17 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.sydokiddo.auditory.core.registry.AuditoryBlockTags;
 import net.sydokiddo.auditory.core.registry.AuditorySounds;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Registry to override vanilla sound types. If a {@link BlockState} has any tag in the registry, the associated sound type will be used instead of the vanilla one.
+ *
+ * @author ebo2022
+ */
 public final class BlockSoundOverrides {
 
-    /**
-     * If a {@link BlockState} contains any tag on the map, the new sound type will replace the original.
-     */
     public static final Map<TagKey<Block>, SoundType> REGISTRY = new HashMap<>() {{
         put(AuditoryBlockTags.BASALT_SOUNDS, SoundType.BASALT);
         put(AuditoryBlockTags.CLAY_BRICK_SOUNDS, AuditorySounds.CLAY_BRICKS);

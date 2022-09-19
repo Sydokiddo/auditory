@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.sydokiddo.auditory.core.mixin.forge",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "ForgeBoatItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

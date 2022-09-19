@@ -13,6 +13,7 @@ loom {
     forge {
         // For some reason gradle doesn't like using rootProject here?
         mixinConfig "${project.mod_id}-common.mixins.json"
+        mixinConfig("${project.mod_id}.mixins.json")
 
         convertAccessWideners.set(true)
         extraAccessWideners.add("${project.mod_id}.accesswidener")

@@ -17,7 +17,8 @@
   "license": "MIT",
   "icon": "assets/auditory/icon.png",
   "mixins": [
-    "${id}-common.mixins.json"
+    "${id}-common.mixins.json",
+    "${id}.mixins.json"
   ],
   "entrypoints": {
     "main": [

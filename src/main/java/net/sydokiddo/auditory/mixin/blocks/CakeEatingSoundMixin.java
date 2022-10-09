@@ -24,12 +24,10 @@ public abstract class CakeEatingSoundMixin extends Block {
         super(properties);
     }
 
-    @Inject(method = "eat", at = @At("RETURN"))
-    private static void eat(LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState, Player player, CallbackInfoReturnable<InteractionResult> cir) {
-        if (player.canEat(false)) {
-            if (Auditory.getConfig().block_sounds.cake_eating_sounds) {
-                levelAccessor.playSound(player, blockPos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 1.0f, 0.8f + levelAccessor.getRandom().nextFloat() * 0.4F);
-            }
+    @Inject(method = "eat", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/food/FoodData;eat(IF)V"))
+    private static void auditory_eatingSound(LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState, Player player, CallbackInfoReturnable<InteractionResult> cir) {
+        if (Auditory.getConfig().block_sounds.cake_eating_sounds) {
+            levelAccessor.playSound(player, blockPos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 1.0f, 0.8f + levelAccessor.getRandom().nextFloat() * 0.4F);
         }
     }
 }

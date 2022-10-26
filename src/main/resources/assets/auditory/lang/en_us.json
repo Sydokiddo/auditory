@@ -19,6 +19,8 @@
   "text.autoconfig.auditory.option.block_sounds": "Block Sounds",
   "text.autoconfig.auditory.option.block_sounds.block_sounds": "Enable Updated Block Sounds",
   "text.autoconfig.auditory.option.block_sounds.block_sounds.@Tooltip": "Enables updated block sounds when set to true",
+  "text.autoconfig.auditory.option.block_sounds.falling_in_place_sound": "Falling in Place Block Sounds",
+  "text.autoconfig.auditory.option.block_sounds.falling_in_place_sound.@Tooltip": "Falling or jumping in place will cause the footstep sounds to play",
   "text.autoconfig.auditory.option.block_sounds.jukebox_sounds": "Jukebox Interact Sounds",
   "text.autoconfig.auditory.option.block_sounds.jukebox_sounds.@Tooltip": "Jukeboxes play an inserting and ejecting sound when interacted with",
   "text.autoconfig.auditory.option.block_sounds.flower_pot_sounds": "Flower Pot Interact Sounds",

@@ -20,6 +20,9 @@ public class ModConfig implements ConfigData {
         public boolean block_sounds = true;
 
         @ConfigEntry.Gui.Tooltip
+        public boolean falling_in_place_sound = true;
+
+        @ConfigEntry.Gui.Tooltip
         public boolean jukebox_sounds = true;
 
         @ConfigEntry.Gui.Tooltip

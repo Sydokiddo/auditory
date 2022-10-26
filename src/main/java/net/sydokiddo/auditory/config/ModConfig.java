@@ -60,28 +60,28 @@ public class ModConfig implements ConfigData {
     public static class WeaponSounds {
 
         @ConfigEntry.Gui.Tooltip
-        public boolean fist_swinging_sounds = true;
+        public boolean fist_swinging_sounds = false;
 
         @ConfigEntry.Gui.Tooltip
         public boolean sword_swinging_sounds = true;
 
         @ConfigEntry.Gui.Tooltip
-        public boolean axe_swinging_sounds = true;
+        public boolean axe_swinging_sounds = false;
 
         @ConfigEntry.Gui.Tooltip
-        public boolean pickaxe_swinging_sounds = true;
+        public boolean pickaxe_swinging_sounds = false;
 
         @ConfigEntry.Gui.Tooltip
-        public boolean shovel_swinging_sounds = true;
+        public boolean shovel_swinging_sounds = false;
 
         @ConfigEntry.Gui.Tooltip
-        public boolean hoe_swinging_sounds = true;
+        public boolean hoe_swinging_sounds = false;
 
         @ConfigEntry.Gui.Tooltip
         public boolean trident_swinging_sounds = true;
 
         @ConfigEntry.Gui.Tooltip
-        public boolean shear_swinging_sounds = true;
+        public boolean shear_swinging_sounds = false;
 
         @ConfigEntry.Gui.Tooltip
         public boolean bow_pullback_sounds = true;

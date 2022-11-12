@@ -21,7 +21,7 @@ public abstract class FallOnBlockMixin {
     // Plays block stepping sound when entities fall onto any block while not crouching
 
     @Inject(method = "fallOn", at = @At("RETURN"))
-    public void fallOn(Level level, BlockState blockState, BlockPos blockPos, Entity entity, float f, CallbackInfo ci) {
+    public void auditory_fallSound(Level level, BlockState blockState, BlockPos blockPos, Entity entity, float f, CallbackInfo ci) {
         if (Auditory.getConfig().block_sounds.falling_in_place_sound) {
             if (!entity.isCrouching() && entity instanceof LivingEntity) {
                 if (!blockState.isAir() && !blockState.is(BlockTags.FIRE) && !blockState.is(BlockTags.PORTALS) && (!blockState.getMaterial().isLiquid())) {

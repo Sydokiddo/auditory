@@ -18,13 +18,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 // This is entirely data-driven and can be controlled by adding the block's ID to the respective tag through a datapack or mod.
 
 @Mixin(Block.class)
-abstract class BlockMixin extends BlockBehaviour {
-    public BlockMixin(Properties properties) {
+abstract class BlockSoundsMixin extends BlockBehaviour {
+    public BlockSoundsMixin(Properties properties) {
         super(properties);
     }
 
     @Inject(at = @At("HEAD"), method = "getSoundType", cancellable = true)
-    public void getSoundType(BlockState state, CallbackInfoReturnable<SoundType> info) {
+    private void auditory_alterSoundType(BlockState state, CallbackInfoReturnable<SoundType> info) {
 
         if (Auditory.getConfig().block_sounds.block_sounds) {
 
@@ -32,103 +32,103 @@ abstract class BlockMixin extends BlockBehaviour {
                 info.setReturnValue(SoundType.BASALT);
             }
 
-            if (state.is(AuditoryTags.CLAY_BRICK_SOUNDS)) {
+            else if (state.is(AuditoryTags.CLAY_BRICK_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.CLAY_BRICKS);
             }
 
-            if (state.is(AuditoryTags.DIRT_SOUNDS)) {
+            else if (state.is(AuditoryTags.DIRT_SOUNDS)) {
                 info.setReturnValue(SoundType.ROOTED_DIRT);
             }
 
-            if (state.is(AuditoryTags.GOLD_SOUNDS)) {
+            else if (state.is(AuditoryTags.GOLD_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.GOLD);
             }
 
-            if (state.is(AuditoryTags.LEAF_SOUNDS)) {
+            else if (state.is(AuditoryTags.LEAF_SOUNDS)) {
                 info.setReturnValue(SoundType.AZALEA_LEAVES);
             }
 
-            if (state.is(AuditoryTags.LILY_PAD_SOUNDS)) {
+            else if (state.is(AuditoryTags.LILY_PAD_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.LILY_PAD);
             }
 
-            if (state.is(AuditoryTags.METAL_SOUNDS)) {
+            else if (state.is(AuditoryTags.METAL_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.METAL);
             }
 
-            if (state.is(AuditoryTags.NETHERRACK_SOUNDS)) {
+            else if (state.is(AuditoryTags.NETHERRACK_SOUNDS)) {
                 info.setReturnValue(SoundType.NETHERRACK);
             }
 
-            if (state.is(AuditoryTags.OBSIDIAN_SOUNDS)) {
+            else if (state.is(AuditoryTags.OBSIDIAN_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.OBSIDIAN);
             }
 
-            if (state.is(AuditoryTags.PLANT_SOUNDS)) {
+            else if (state.is(AuditoryTags.PLANT_SOUNDS)) {
                 info.setReturnValue(SoundType.HANGING_ROOTS);
             }
 
-            if (state.is(AuditoryTags.RAW_ORE_BLOCK_SOUNDS)) {
+            else if (state.is(AuditoryTags.RAW_ORE_BLOCK_SOUNDS)) {
                 info.setReturnValue(SoundType.NETHER_GOLD_ORE);
             }
 
-            if (state.is(AuditoryTags.SAND_SOUNDS)) {
+            else if (state.is(AuditoryTags.SAND_SOUNDS)) {
                 info.setReturnValue(SoundType.SAND);
             }
 
-            if (state.is(AuditoryTags.SHULKER_BOX_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
+            else if (state.is(AuditoryTags.SHULKER_BOX_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
                 info.setReturnValue(ModSoundEvents.SHULKER_BOX);
             }
 
-            if (state.is(AuditoryTags.SMALL_OBJECT_SOUNDS)) {
+            else if (state.is(AuditoryTags.SMALL_OBJECT_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.SMALL_OBJECT);
             }
 
-            if (state.is(AuditoryTags.SPAWNER_SOUNDS)) {
+            else if (state.is(AuditoryTags.SPAWNER_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.SPAWNER);
             }
 
-            if (state.is(AuditoryTags.STONE_BRICK_SOUNDS)) {
+            else if (state.is(AuditoryTags.STONE_BRICK_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.STONE_BRICKS);
             }
 
-            if (state.is(AuditoryTags.STONE_ORE_SOUNDS)) {
+            else if (state.is(AuditoryTags.STONE_ORE_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.STONE_ORE);
             }
 
-            if (state.is(AuditoryTags.STRING_SOUNDS)) {
+            else if (state.is(AuditoryTags.STRING_SOUNDS)) {
                 info.setReturnValue(SoundType.VINE);
             }
 
-            if (state.is(AuditoryTags.TERRACOTTA_SOUNDS)) {
+            else if (state.is(AuditoryTags.TERRACOTTA_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.TERRACOTTA);
             }
 
-            if (state.is(AuditoryTags.WOOD_SOUNDS)) {
+            else if (state.is(AuditoryTags.WOOD_SOUNDS)) {
                 info.setReturnValue(SoundType.WOOD);
             }
 
-            if (state.is(AuditoryTags.MUSHROOM_SOUNDS)) {
+            else if (state.is(AuditoryTags.MUSHROOM_SOUNDS)) {
                 info.setReturnValue(SoundType.WART_BLOCK);
             }
 
-            if (state.is(AuditoryTags.MUSHROOM_STEM_SOUNDS)) {
+            else if (state.is(AuditoryTags.MUSHROOM_STEM_SOUNDS)) {
                 info.setReturnValue(SoundType.STEM);
             }
 
-            if (state.is(AuditoryTags.PURPUR_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
+            else if (state.is(AuditoryTags.PURPUR_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
                 info.setReturnValue(ModSoundEvents.PURPUR);
             }
 
-            if (state.is(AuditoryTags.CHORUS_PLANT_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
+            else if (state.is(AuditoryTags.CHORUS_PLANT_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore"))) {
                 info.setReturnValue(ModSoundEvents.CHORUS_PLANT);
             }
 
-            if (state.is(AuditoryTags.ICE_SOUNDS)) {
+            else if (state.is(AuditoryTags.ICE_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.ICE);
             }
 
-            if (state.is(AuditoryTags.GOURD_SOUNDS)) {
+            else if (state.is(AuditoryTags.GOURD_SOUNDS)) {
                 info.setReturnValue(ModSoundEvents.GOURD);
             }
         }

@@ -4,15 +4,14 @@
   "package": "net.sydokiddo.auditory.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "blocks.BlockMixin",
+    "blocks.BlockSoundsMixin",
     "blocks.CakeEatingSoundMixin",
     "blocks.FallOnBlockMixin",
     "blocks.FlowerPotPlantSoundMixin",
     "blocks.JukeboxDiscSoundMixin",
     "entities.BoatPlaceSoundMixin",
     "entities.MinecartPlaceSoundMixin",
-    "entities.MixinEndermiteEntity",
-    "entities.MixinSilverfishEntity",
+    "entities.ArthropodStepSoundsMixin",
     "items.BowPullbackSound",
     "items.EnderPearlSoundMixin",
     "items.ItemDropSoundMixin",
@@ -23,7 +22,6 @@
     "items.WeaponSwingMixin"
   ],
   "client": [
-    "misc.SoundEngineAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

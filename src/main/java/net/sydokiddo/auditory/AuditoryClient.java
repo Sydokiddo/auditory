@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
-import net.sydokiddo.auditory.mixin.misc.SoundEngineAccessor;
 import org.lwjgl.glfw.GLFW;
 
 public class AuditoryClient implements ClientModInitializer {
@@ -28,7 +27,7 @@ public class AuditoryClient implements ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (reloadKey.isDown()) {
                 assert client.player != null;
-                ((SoundEngineAccessor)Minecraft.getInstance().getSoundManager()).getSoundEngine().reload();
+                Minecraft.getInstance().getSoundManager().reload();
                 Minecraft mc = Minecraft.getInstance();
                 mc.gui.getChat().addMessage(Component.translatable("auditory.sound_reload_message"));
             }

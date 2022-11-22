@@ -16,21 +16,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(BowItem.class)
 public class BowPullbackSound {
-
-    @Inject(at = @At("HEAD"), method = "use", cancellable = true)
-    public void use(Level level, Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResultHolder<ItemStack>> cir) {
-        ItemStack itemStack = player.getItemInHand(interactionHand);
-        boolean bl = !player.getProjectile(itemStack).isEmpty();
-        if (!player.getAbilities().instabuild && !bl) {
-            cir.setReturnValue(InteractionResultHolder.fail(itemStack));
-        } else {
-            player.startUsingItem(interactionHand);
-
-            if (Auditory.getConfig().weapon_sounds.bow_pullback_sounds) {
-                level.playSound(null, player.getX(), player.getY(), player.getZ(), ModSoundEvents.ITEM_BOW_PULLING, SoundSource.PLAYERS, 0.3F, 0.8f + player.level.random.nextFloat() * 0.4F);
-            }
-
-            cir.setReturnValue(InteractionResultHolder.consume(itemStack));
+    @Inject(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/InteractionResultHolder;consume(Ljava/lang/Object;)Lnet/minecraft/world/InteractionResultHolder;"))
+    private void auditory_pullbackSound(Level level, Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResultHolder<ItemStack>> cir) {
+        if (Auditory.getConfig().weapon_sounds.bow_pullback_sounds) {
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), ModSoundEvents.ITEM_BOW_PULLING, SoundSource.PLAYERS, 0.3F, 0.8f + player.level.random.nextFloat() * 0.4F);
         }
     }
 }

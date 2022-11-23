@@ -1,4 +1,4 @@
-![github_icon](https://i.imgur.com/84eIm7N.png)
+![github_icon](images/mod_icon.png)
 
 ## **About Auditory**
 

@@ -1,7 +1,7 @@
 {
-  "auditory.sound_reload_key":"Reload sound system",
-  "auditory.sound_reload_message":"Auditory: Reloaded sound system",
-  "auditory.category":"Auditory",
+  "auditory.sound_reload_key": "Reload sound system",
+  "auditory.sound_reload_message": "Auditory: Reloaded sound system",
+  "auditory.category": "Auditory",
 
   "subtitles.item.bow.pulling": "Bow draws back",
   "subtitles.item.trident.swing": "Trident draws back",

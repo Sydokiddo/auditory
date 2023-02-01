@@ -41,6 +41,8 @@
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "*"
+    "another-mod": "*",
+    "modmenu" : "*",
+    "cloth config" : "*"
   }
 }

@@ -1,5 +1,7 @@
 package net.sydokiddo.auditory.sound;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
@@ -140,9 +142,9 @@ public class ModSoundEvents {
 
     private static SoundEvent registerSoundEvent(String name) {
         ResourceLocation id = new ResourceLocation(Auditory.MOD_ID, name);
-        return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
+        SoundEvent se = SoundEvent.createVariableRangeEvent(id);
+        return Registry.register(BuiltInRegistries.SOUND_EVENT, id, se);
     }
-
     public static void registerSounds() {
         System.out.println("Registering Sounds for " + Auditory.MOD_ID);
     }

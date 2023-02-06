@@ -21,8 +21,6 @@
     "items.TridentPullbackSound",
     "items.WeaponSwingMixin"
   ],
-  "client": [
-  ],
   "injectors": {
     "defaultRequire": 1
   }

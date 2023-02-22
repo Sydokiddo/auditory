@@ -17,10 +17,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(TridentItem.class)
 public abstract class TridentPullbackSound {
 
-    @Inject(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/InteractionResultHolder;consume(Ljava/lang/Object;)Lnet/minecraft/world/InteractionResultHolder;"))
+    @Inject(method = "use", at = @At(value = "RETURN", target = "Lnet/minecraft/world/entity/player/Player;startUsingItem(Lnet/minecraft/world/InteractionHand;)V"))
     private void auditory_pullbackSound(Level level, Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResultHolder<ItemStack>> cir) {
         if (Auditory.getConfig().weapon_sounds.trident_pullback_sounds) {
-            level.playSound(null, player.getX(), player.getY(), player.getZ(), ModSoundEvents.ITEM_TRIDENT_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + player.level.random.nextFloat() * 0.4F);
+            level.playSound(null, player.getOnPos(), ModSoundEvents.ITEM_TRIDENT_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + player.level.random.nextFloat() * 0.4F);
         }
     }
 }

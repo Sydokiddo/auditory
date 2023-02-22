@@ -1,4 +1,4 @@
-package net.sydokiddo.auditory.config;
+package net.sydokiddo.auditory.misc.config;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

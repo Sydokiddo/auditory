@@ -39,7 +39,7 @@ public abstract class LeadAttachSoundMixin extends LivingEntity {
     }
 
     @Inject(method = "interact", at = @At(value = "INVOKE", target = "net/minecraft/world/entity/Mob.dropLeash(ZZ)V", shift = Shift.AFTER))
-    private final void auditory_unleashSound(Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {
+    private void auditory_unleashSound(Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {
         if (Auditory.getConfig().item_sounds.lead_sounds) {
             level.playSound(player, this.getX(), this.getY(), this.getZ(), SoundEvents.LEASH_KNOT_BREAK, SoundSource.NEUTRAL, 0.5F, 0.8f + this.level.random.nextFloat() * 0.4F);
         }

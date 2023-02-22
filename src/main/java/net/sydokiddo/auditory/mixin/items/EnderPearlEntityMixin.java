@@ -36,7 +36,6 @@ abstract class EnderPearlSoundMixin extends ThrowableItemProjectile {
         if (Auditory.getConfig().item_sounds.ender_pearl_sounds &&
             (!FabricLoader.getInstance().isModLoaded("endlessencore")) &&
             this.getOwner() instanceof Player player) {
-
                 player.playNotifySound(SoundEvents.CHORUS_FRUIT_TELEPORT, SoundSource.PLAYERS, 0.8f, 1.0f);
         }
     }

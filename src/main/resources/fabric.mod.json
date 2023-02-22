@@ -7,7 +7,7 @@
   "description": "A mod that expands and improves upon the sound and audio aspects of Minecraft!",
   "authors": [
     "Sydokiddo (Developer)",
-    "AmbientUnder (Additional Sounds)"
+    "AmbientSand (Additional Sounds)"
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/auditory",
@@ -27,7 +27,7 @@
       "net.sydokiddo.auditory.AuditoryClient"
     ],
     "modmenu": [
-      "net.sydokiddo.auditory.config.ModMenuCompatibility"
+      "net.sydokiddo.auditory.misc.config.ModMenuCompatibility"
     ]
   },
   "mixins": [

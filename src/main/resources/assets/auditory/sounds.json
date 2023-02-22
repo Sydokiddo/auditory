@@ -48,7 +48,6 @@
       "auditory:block/shulker_box/step5"
     ]
   },
-
   "block.jukebox.use": {
     "sounds": [
       "auditory:block/jukebox/use1",
@@ -62,7 +61,6 @@
     ],
     "subtitle": "subtitles.block.jukebox.eject"
   },
-
   "item.bow.pulling": {
     "sounds": [
       "auditory:item/bow/pulling1",
@@ -115,7 +113,6 @@
     ],
     "subtitle": "subtitles.item.shield.raise"
   },
-
   "item.spawn_egg.use": {
     "sounds": [
       "auditory:item/spawn_egg/use1",
@@ -126,21 +123,18 @@
     ],
     "subtitle": "subtitles.item.spawn_egg.use"
   },
-
   "player.item.drop": {
     "sounds": [
       "auditory:entity/player/drop_item"
     ],
     "subtitle": "subtitles.entity.player.drop_item"
   },
-
   "block.spawner.break": {
     "sounds": [
       "auditory:block/spawner/break1"
     ],
     "subtitle": "subtitles.block.generic.break"
   },
-
   "block.chorus_plant.place": {
     "sounds": [
       "auditory:block/chorus_plant/place1",
@@ -161,10 +155,11 @@
   },
   "block.chorus_plant.hit": {
     "sounds": [
-      "auditory:block/chorus_plant/place1",
-      "auditory:block/chorus_plant/place2",
-      "auditory:block/chorus_plant/place3",
-      "auditory:block/chorus_plant/place4"
+      "auditory:block/chorus_plant/step1",
+      "auditory:block/chorus_plant/step2",
+      "auditory:block/chorus_plant/step3",
+      "auditory:block/chorus_plant/step4",
+      "auditory:block/chorus_plant/step5"
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
@@ -187,7 +182,6 @@
       "auditory:block/chorus_plant/step5"
     ]
   },
-
   "block.purpur.place": {
     "sounds": [
       "auditory:block/purpur/place1",
@@ -210,11 +204,9 @@
   },
   "block.purpur.hit": {
     "sounds": [
-      "auditory:block/purpur/place1",
-      "auditory:block/purpur/place2",
-      "auditory:block/purpur/place3",
-      "auditory:block/purpur/place4",
-      "auditory:block/purpur/place5"
+      "auditory:block/purpur/step1",
+      "auditory:block/purpur/step2",
+      "auditory:block/purpur/step3"
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
@@ -233,7 +225,6 @@
       "auditory:block/purpur/step3"
     ]
   },
-
   "block.ice.place": {
     "sounds": [
       "auditory:block/ice/place1",
@@ -253,10 +244,11 @@
   },
   "block.ice.hit": {
     "sounds": [
-      "auditory:block/ice/place1",
-      "auditory:block/ice/place2",
-      "auditory:block/ice/place3",
-      "auditory:block/ice/place4"
+      "auditory:block/ice/step1",
+      "auditory:block/ice/step2",
+      "auditory:block/ice/step3",
+      "auditory:block/ice/step4",
+      "auditory:block/ice/step5"
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
@@ -279,7 +271,6 @@
       "auditory:block/ice/step5"
     ]
   },
-
   "block.gourd.place": {
     "sounds": [
       "auditory:block/gourd/break1",
@@ -300,10 +291,10 @@
   },
   "block.gourd.hit": {
     "sounds": [
-      "auditory:block/gourd/break1",
-      "auditory:block/gourd/break2",
-      "auditory:block/gourd/break3",
-      "auditory:block/gourd/break4"
+      "auditory:block/gourd/step1",
+      "auditory:block/gourd/step2",
+      "auditory:block/gourd/step3",
+      "auditory:block/gourd/step4"
     ],
     "subtitle": "subtitles.block.generic.hit"
   },

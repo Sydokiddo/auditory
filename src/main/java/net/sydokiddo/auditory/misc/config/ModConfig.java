@@ -1,8 +1,9 @@
-package net.sydokiddo.auditory.config;
+package net.sydokiddo.auditory.misc.config;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
+import net.sydokiddo.auditory.misc.config.options.IndividualBlockSoundsConfig;
 
 // Mod Config
 
@@ -16,8 +17,9 @@ public class ModConfig implements ConfigData {
 
     public static class BlockSounds {
 
+        @ConfigEntry.Gui.CollapsibleObject()
         @ConfigEntry.Gui.Tooltip
-        public boolean block_sounds = true;
+        public IndividualBlockSoundsConfig blockSoundsConfig = new IndividualBlockSoundsConfig();
 
         @ConfigEntry.Gui.Tooltip
         public boolean falling_in_place_sound = true;

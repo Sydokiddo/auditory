@@ -1,0 +1,36 @@
+- Eating sounds for all animals that don't have them already:
+
+ - Pig
+ - Cow/Mooshroom
+ - Sheep
+ - Chicken
+ - Axolotl
+ - Bees
+ - Ocelot (Same sound as cat)
+ - Frog
+ - Panda
+ - Hoglin
+ - Tadpole
+ - Turtle
+ - Rabbit
+
+- Sound for thrown eggs and snowballs hitting something
+
+- Sounds for opening a chest boat or minecart
+
+- Unique equip sounds for Carved Pumpkins and Mob Heads (Skeleton Skull, Wither Skeleton Skull, Zombie Head, Creeper Head, and Dragon Head)
+
+- Unique sound for a trident falling
+
+- Prismarine block set sounds
+
+- Blackstone block set sounds
+
+- Quartz block set sounds
+
+- Unique eating sounds for certain food items:
+
+ - Stews (Mushroom Stew, Beetroot Soup, Rabbit Stew, Suspicious Stew)
+ - Dried Kelp
+ - Pufferfish
+ - Fruits (Apples, Golden Apples, Melons, Sweet Berries, Glow Berries, and Chorus Fruit)

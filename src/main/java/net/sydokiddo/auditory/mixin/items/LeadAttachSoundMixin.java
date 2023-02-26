@@ -12,7 +12,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.sydokiddo.auditory.Auditory;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.At.Shift;
@@ -27,9 +26,6 @@ public abstract class LeadAttachSoundMixin extends LivingEntity {
     protected LeadAttachSoundMixin(EntityType<? extends LivingEntity> entityType, Level level) {
         super(entityType, level);
     }
-
-    @Shadow
-    public abstract void dropLeash(boolean bl, boolean bl2);
 
     @Inject(method = "setLeashedTo", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerChunkCache;broadcast(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/protocol/Packet;)V"))
     private void auditory_leashSound(Entity entity, boolean bl, CallbackInfo ci) {

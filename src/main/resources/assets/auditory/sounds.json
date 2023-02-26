@@ -314,5 +314,45 @@
       "auditory:block/gourd/step3",
       "auditory:block/gourd/step4"
     ]
+  },
+  "item.dried_kelp.eat": {
+    "sounds": [
+      "auditory:item/food/eat_dried_kelp1",
+      "auditory:item/food/eat_dried_kelp2",
+      "auditory:item/food/eat_dried_kelp3"
+    ],
+    "subtitle": "subtitles.entity.generic.eat"
+  },
+  "item.soft_fruit.eat": {
+    "sounds": [
+      "auditory:item/food/eat_soft_fruit1",
+      "auditory:item/food/eat_soft_fruit2",
+      "auditory:item/food/eat_soft_fruit3"
+    ],
+    "subtitle": "subtitles.entity.generic.eat"
+  },
+  "item.crunchy_fruit.eat": {
+    "sounds": [
+      "auditory:item/food/eat_crunchy_fruit1",
+      "auditory:item/food/eat_crunchy_fruit2",
+      "auditory:item/food/eat_crunchy_fruit3"
+    ],
+    "subtitle": "subtitles.entity.generic.eat"
+  },
+  "item.stew.eat": {
+    "sounds": [
+      "auditory:item/food/eat_stew1",
+      "auditory:item/food/eat_stew2",
+      "auditory:item/food/eat_stew3"
+    ],
+    "subtitle": "subtitles.entity.generic.eat"
+  },
+  "item.vegetable.eat": {
+    "sounds": [
+      "auditory:item/food/eat_vegetable1",
+      "auditory:item/food/eat_vegetable2",
+      "auditory:item/food/eat_vegetable3"
+    ],
+    "subtitle": "subtitles.entity.generic.eat"
   }
 }

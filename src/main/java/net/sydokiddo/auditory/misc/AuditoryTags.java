@@ -4,6 +4,7 @@ package net.sydokiddo.auditory.misc;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 // Tag Registry:
@@ -38,4 +39,12 @@ public class AuditoryTags {
     public static final TagKey<Block> GOURD_SOUNDS = TagKey.create(Registries.BLOCK, new ResourceLocation("auditory", "gourd_sounds"));
     public static final TagKey<Block> MUSHROOM_SOUNDS = TagKey.create(Registries.BLOCK, new ResourceLocation("auditory", "mushroom_sounds"));
     public static final TagKey<Block> MUSHROOM_STEM_SOUNDS = TagKey.create(Registries.BLOCK, new ResourceLocation("auditory", "mushroom_stem_sounds"));
+
+    // Item Sound Tags
+
+    public static final TagKey<Item> DRIED_KELP_SOUNDS = TagKey.create(Registries.ITEM, new ResourceLocation("auditory", "dried_kelp_sounds"));
+    public static final TagKey<Item> SOFT_FRUIT_SOUNDS = TagKey.create(Registries.ITEM, new ResourceLocation("auditory", "soft_fruit_sounds"));
+    public static final TagKey<Item> CRUNCHY_FRUIT_SOUNDS = TagKey.create(Registries.ITEM, new ResourceLocation("auditory", "crunchy_fruit_sounds"));
+    public static final TagKey<Item> STEW_SOUNDS = TagKey.create(Registries.ITEM, new ResourceLocation("auditory", "stew_sounds"));
+    public static final TagKey<Item> VEGETABLE_SOUNDS = TagKey.create(Registries.ITEM, new ResourceLocation("auditory", "vegetable_sounds"));
 }

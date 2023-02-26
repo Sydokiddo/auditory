@@ -19,6 +19,11 @@ public class ModSoundEvents {
     public static final SoundEvent ITEM_TOOL_SWING = registerSoundEvent("item.tool.swing");
     public static final SoundEvent ITEM_SPAWN_EGG_USE = registerSoundEvent("item.spawn_egg.use");
     public static final SoundEvent ITEM_SHIELD_RAISE = registerSoundEvent("item.shield.raise");
+    public static final SoundEvent DRIED_KELP_EAT = registerSoundEvent("item.dried_kelp.eat");
+    public static final SoundEvent SOFT_FRUIT_EAT = registerSoundEvent("item.soft_fruit.eat");
+    public static final SoundEvent CRUNCHY_FRUIT_EAT = registerSoundEvent("item.crunchy_fruit.eat");
+    public static final SoundEvent STEW_EAT = registerSoundEvent("item.stew.eat");
+    public static final SoundEvent VEGETABLE_EAT = registerSoundEvent("item.vegetable.eat");
 
     // - Block Sounds:
 

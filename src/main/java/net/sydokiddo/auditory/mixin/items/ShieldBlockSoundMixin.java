@@ -20,7 +20,7 @@ public class ShieldBlockSoundMixin {
     @Inject(at = @At("HEAD"), method = "use")
     private void auditory_blockSound(Level level, Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResultHolder<ItemStack>> cir) {
         if (Auditory.getConfig().weapon_sounds.shield_blocking_sounds) {
-            level.playSound(null, player.getX(), player.getY(), player.getZ(), ModSoundEvents.ITEM_SHIELD_RAISE, SoundSource.PLAYERS, 0.1F, 0.8f + player.level.random.nextFloat() * 0.4F);
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), ModSoundEvents.ITEM_SHIELD_RAISE.get(), SoundSource.PLAYERS, 0.1F, 0.8f + player.level.random.nextFloat() * 0.4F);
         }
     }
 }

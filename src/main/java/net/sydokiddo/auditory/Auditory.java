@@ -2,29 +2,34 @@ package net.sydokiddo.auditory;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
-import net.fabricmc.api.ModInitializer;
+import net.minecraftforge.client.ConfigScreenHandler;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sydokiddo.auditory.misc.config.ModConfig;
 import net.sydokiddo.auditory.sound.ModSoundEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Auditory implements ModInitializer {
+@Mod(Auditory.MOD_ID)
+public class Auditory {
 
-	public static final Logger LOGGER = LoggerFactory.getLogger("auditory");
-	public static final String MOD_ID = "auditory";
-	private static final ModConfig CONFIG = AutoConfig.register(ModConfig.class, GsonConfigSerializer::new).getConfig();
+    public static final String MOD_ID = "auditory";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    private static final ModConfig CONFIG = AutoConfig.register(ModConfig.class, GsonConfigSerializer::new).get();
 
-	@Override
-	public void onInitialize() {
+    public Auditory() {
+        ModSoundEvents.SOUND_EVENTS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        // Registry:
+        ModSoundEvents.registerSounds();
+        LOGGER.info("Thank you for downloading Auditory! :)");
 
-		// Registry:
+        // registering config gui
+        ModLoadingContext.get().registerExtensionPoint(ConfigScreenHandler.ConfigScreenFactory.class,
+            () -> new ConfigScreenHandler.ConfigScreenFactory((minecraft, screen) -> AutoConfig.getConfigScreen(ModConfig.class, screen).get()));
+    }
 
-		ModSoundEvents.registerSounds();
-
-		LOGGER.info("Thank you for downloading Auditory! :)");
-	}
-
-	public static ModConfig getConfig () {
-		return CONFIG;
-	}
+    public static ModConfig getConfig() {
+        return CONFIG;
+    }
 }

@@ -37,7 +37,7 @@ public abstract class JukeboxDiscSoundMixin extends BaseEntityBlock {
     )
     private void auditory_ejectDiscSound(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult, CallbackInfoReturnable<InteractionResult> cir) {
         if (Auditory.getConfig().block_sounds.jukebox_sounds) {
-            level.playSound(player, blockPos, ModSoundEvents.BLOCK_JUKEBOX_EJECT, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
+            level.playSound(player, blockPos, ModSoundEvents.BLOCK_JUKEBOX_EJECT.get(), SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
         }
     }
 
@@ -45,7 +45,7 @@ public abstract class JukeboxDiscSoundMixin extends BaseEntityBlock {
     @Inject(method = "setRecord", at = @At("HEAD"))
     private void auditory_insertDiscSound(Entity entity, LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState, ItemStack itemStack, CallbackInfo ci) {
         if (Auditory.getConfig().block_sounds.jukebox_sounds) {
-            levelAccessor.playSound(null, blockPos, ModSoundEvents.BLOCK_JUKEBOX_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
+            levelAccessor.playSound(null, blockPos, ModSoundEvents.BLOCK_JUKEBOX_USE.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
         }
     }
 }

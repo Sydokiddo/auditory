@@ -30,22 +30,22 @@ public abstract class WeaponSwingMixin extends Entity {
 
     @Unique
     private void auditory_playSwordSounds() {
-        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_SWORD_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + this.level.random.nextFloat() * 0.4F);
+        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_SWORD_SWING.get(), SoundSource.PLAYERS, 0.1F, 0.8f + this.level.random.nextFloat() * 0.4F);
     }
 
     @Unique
     private void auditory_playAxeSounds() {
-        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_AXE_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + this.level.random.nextFloat() * 0.4F);
+        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_AXE_SWING.get(), SoundSource.PLAYERS, 0.1F, 0.8f + this.level.random.nextFloat() * 0.4F);
     }
 
     @Unique
     private void auditory_playToolSounds() {
-        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_TOOL_SWING, SoundSource.PLAYERS, 0.1F, 0.8f + this.level.random.nextFloat() * 0.4F);
+        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_TOOL_SWING.get(), SoundSource.PLAYERS, 0.1F, 0.8f + this.level.random.nextFloat() * 0.4F);
     }
 
     @Unique
     private void auditory_playLightweightToolSounds() {
-        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_TOOL_SWING, SoundSource.PLAYERS, 0.1F, 1.4f + this.level.random.nextFloat() * 0.8F);
+        level.playSound(null, this.getX(), this.getY(), this.getZ(), ModSoundEvents.ITEM_TOOL_SWING.get(), SoundSource.PLAYERS, 0.1F, 1.4f + this.level.random.nextFloat() * 0.8F);
     }
 
     @Unique

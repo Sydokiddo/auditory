@@ -1,11 +1,11 @@
 package net.sydokiddo.auditory.mixin.blocks;
 
 
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.fml.ModList;
 import net.sydokiddo.auditory.Auditory;
 import net.sydokiddo.auditory.misc.AuditoryTags;
 import net.sydokiddo.auditory.sound.ModSoundEvents;
@@ -63,11 +63,11 @@ abstract class BlockSoundsMixin extends BlockBehaviour {
         else if (state.is(AuditoryTags.SAND_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.redstoneWireSounds)) {
             info.setReturnValue(SoundType.SAND);
         }
-        else if (state.is(AuditoryTags.SHULKER_BOX_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore")) && (Auditory.getConfig().block_sounds.blockSoundsConfig.shulkerBoxSounds)) {
+        else if (state.is(AuditoryTags.SHULKER_BOX_SOUNDS) && (!ModList.get().isLoaded("endlessencore")) && (Auditory.getConfig().block_sounds.blockSoundsConfig.shulkerBoxSounds)) {
             info.setReturnValue(ModSoundEvents.SHULKER_BOX);
         }
         else if (state.is(AuditoryTags.SMALL_OBJECT_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.smallObjectSounds)) {
-            info.setReturnValue(ModSoundEvents.SMALL_OBJECT);
+        info.setReturnValue(ModSoundEvents.SMALL_OBJECT);
         }
         else if (state.is(AuditoryTags.SPAWNER_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.spawnerSounds)) {
             info.setReturnValue(ModSoundEvents.SPAWNER);
@@ -93,10 +93,10 @@ abstract class BlockSoundsMixin extends BlockBehaviour {
         else if (state.is(AuditoryTags.MUSHROOM_STEM_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.mushroomSounds)) {
             info.setReturnValue(SoundType.STEM);
         }
-        else if (state.is(AuditoryTags.PURPUR_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore")) && (Auditory.getConfig().block_sounds.blockSoundsConfig.purpurSounds)) {
+        else if (state.is(AuditoryTags.PURPUR_SOUNDS) && (!ModList.get().isLoaded("endlessencore")) && (Auditory.getConfig().block_sounds.blockSoundsConfig.purpurSounds)) {
             info.setReturnValue(ModSoundEvents.PURPUR);
         }
-        else if (state.is(AuditoryTags.CHORUS_PLANT_SOUNDS) && (!FabricLoader.getInstance().isModLoaded("endlessencore")) && (Auditory.getConfig().block_sounds.blockSoundsConfig.chorusPlantSounds)) {
+        else if (state.is(AuditoryTags.CHORUS_PLANT_SOUNDS) && (!ModList.get().isLoaded("endlessencore")) && (Auditory.getConfig().block_sounds.blockSoundsConfig.chorusPlantSounds)) {
             info.setReturnValue(ModSoundEvents.CHORUS_PLANT);
         }
         else if (state.is(AuditoryTags.ICE_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.iceSounds)) {

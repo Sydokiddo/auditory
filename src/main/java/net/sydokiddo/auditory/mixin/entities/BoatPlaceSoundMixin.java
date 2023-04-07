@@ -32,8 +32,8 @@ public abstract class BoatPlaceSoundMixin extends Item {
     )
     private Boat auditory_placeSound(Boat boat, Level level, Player player, InteractionHand interactionHand) {
         if (Auditory.getConfig().item_sounds.boat_sounds) {
-            if (boat.getVariant() == Boat.Type.BAMBOO) {
-                level.playSound(null, boat, SoundEvents.BAMBOO_WOOD_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
+            if (boat.getBoatType().name().equals("BAMBOO")) {
+                level.playSound(null, boat, SoundEvents.BAMBOO_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
             } else {
                 level.playSound(null, boat, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
             }

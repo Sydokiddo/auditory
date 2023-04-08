@@ -4,10 +4,11 @@
   "auditory.category": "Auditory",
 
   "subtitles.item.bow.pulling": "Bow draws back",
-  "subtitles.item.trident.swing": "Trident draws back",
+  "subtitles.item.trident.pulling": "Trident draws back",
   "subtitles.item.tool.swing": "Tool swings",
   "subtitles.item.weapon.swing": "Weapon swings",
   "subtitles.entity.player.drop_item": "Item drops",
+  "subtitles.entity.player.empty_hand_swing": "Player punches",
   "subtitles.item.spawn_egg.use": "Spawn Egg cracks",
   "subtitles.item.nametag.use": "Nametag is used",
   "subtitles.item.shield.raise": "Shield is raised",

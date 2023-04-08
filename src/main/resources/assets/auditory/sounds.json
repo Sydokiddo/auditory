@@ -88,7 +88,31 @@
     ],
     "subtitle": "subtitles.item.weapon.swing"
   },
-  "item.tool.swing": {
+  "item.pickaxe.swing": {
+    "sounds": [
+      "auditory:item/tool/swing1",
+      "auditory:item/tool/swing2",
+      "auditory:item/tool/swing3"
+    ],
+    "subtitle": "subtitles.item.tool.swing"
+  },
+  "item.shovel.swing": {
+    "sounds": [
+      "auditory:item/tool/swing1",
+      "auditory:item/tool/swing2",
+      "auditory:item/tool/swing3"
+    ],
+    "subtitle": "subtitles.item.tool.swing"
+  },
+  "item.hoe.swing": {
+    "sounds": [
+      "auditory:item/tool/swing1",
+      "auditory:item/tool/swing2",
+      "auditory:item/tool/swing3"
+    ],
+    "subtitle": "subtitles.item.tool.swing"
+  },
+  "item.shears.swing": {
     "sounds": [
       "auditory:item/tool/swing1",
       "auditory:item/tool/swing2",
@@ -98,11 +122,21 @@
   },
   "item.trident.swing": {
     "sounds": [
+      "auditory:item/sword/swing1",
+      "auditory:item/sword/swing2",
+      "auditory:item/sword/swing3",
+      "auditory:item/sword/swing4",
+      "auditory:item/sword/swing5"
+    ],
+    "subtitle": "subtitles.item.weapon.swing"
+  },
+  "item.trident.pulling": {
+    "sounds": [
       "auditory:item/tool/swing1",
       "auditory:item/tool/swing2",
       "auditory:item/tool/swing3"
     ],
-    "subtitle": "subtitles.item.trident.swing"
+    "subtitle": "subtitles.item.trident.pulling"
   },
   "item.shield.raise": {
     "sounds": [
@@ -123,11 +157,20 @@
     ],
     "subtitle": "subtitles.item.spawn_egg.use"
   },
-  "player.item.drop": {
+  "entity.player.drop_item": {
     "sounds": [
-      "auditory:entity/player/drop_item"
+      "minecraft:random/pop"
     ],
     "subtitle": "subtitles.entity.player.drop_item"
+  },
+  "entity.player.empty_hand_swing": {
+    "sounds": [
+      "minecraft:entity/player/attack/weak1",
+      "minecraft:entity/player/attack/weak2",
+      "minecraft:entity/player/attack/weak3",
+      "minecraft:entity/player/attack/weak4"
+    ],
+    "subtitle": "subtitles.entity.player.empty_hand_swing"
   },
   "block.spawner.break": {
     "sounds": [

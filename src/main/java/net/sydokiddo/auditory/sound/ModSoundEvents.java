@@ -13,10 +13,14 @@ public class ModSoundEvents {
     // - Item Sounds:
 
     public static final SoundEvent ITEM_BOW_PULLING = registerSoundEvent("item.bow.pulling");
+    public static final SoundEvent ITEM_TRIDENT_PULLING = registerSoundEvent("item.trident.pulling");
     public static final SoundEvent ITEM_TRIDENT_SWING = registerSoundEvent("item.trident.swing");
     public static final SoundEvent ITEM_SWORD_SWING = registerSoundEvent("item.sword.swing");
     public static final SoundEvent ITEM_AXE_SWING = registerSoundEvent("item.axe.swing");
-    public static final SoundEvent ITEM_TOOL_SWING = registerSoundEvent("item.tool.swing");
+    public static final SoundEvent ITEM_PICKAXE_SWING = registerSoundEvent("item.pickaxe.swing");
+    public static final SoundEvent ITEM_SHOVEL_SWING = registerSoundEvent("item.shovel.swing");
+    public static final SoundEvent ITEM_HOE_SWING = registerSoundEvent("item.hoe.swing");
+    public static final SoundEvent ITEM_SHEARS_SWING = registerSoundEvent("item.shears.swing");
     public static final SoundEvent ITEM_SPAWN_EGG_USE = registerSoundEvent("item.spawn_egg.use");
     public static final SoundEvent ITEM_SHIELD_RAISE = registerSoundEvent("item.shield.raise");
     public static final SoundEvent DRIED_KELP_EAT = registerSoundEvent("item.dried_kelp.eat");
@@ -61,7 +65,8 @@ public class ModSoundEvents {
 
     // - Other Sounds:
 
-    public static final SoundEvent ENTITY_PLAYER_DROP_ITEM = registerSoundEvent("player.item.drop");
+    public static final SoundEvent ENTITY_PLAYER_EMPTY_HAND_SWING = registerSoundEvent("entity.player.empty_hand_swing");
+    public static final SoundEvent ENTITY_PLAYER_DROP_ITEM = registerSoundEvent("entity.player.drop_item");
     public static final SoundEvent BLOCK_JUKEBOX_USE = registerSoundEvent("block.jukebox.use");
     public static final SoundEvent BLOCK_JUKEBOX_EJECT = registerSoundEvent("block.jukebox.eject");
 

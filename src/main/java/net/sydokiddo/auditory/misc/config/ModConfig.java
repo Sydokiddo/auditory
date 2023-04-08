@@ -32,6 +32,9 @@ public class ModConfig implements ConfigData {
 
         @ConfigEntry.Gui.Tooltip
         public boolean cake_eating_sounds = true;
+
+        @ConfigEntry.Gui.Tooltip
+        public boolean sculk_shrieker_ambient_sounds = true;
     }
 
     // Item Sounds

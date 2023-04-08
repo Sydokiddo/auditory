@@ -1,4 +1,4 @@
-package net.sydokiddo.auditory.mixin.items;
+package net.sydokiddo.auditory.mixin.entities;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;

@@ -147,6 +147,17 @@
     ],
     "subtitle": "subtitles.item.shield.raise"
   },
+  "item.shield.equip": {
+    "sounds": [
+      "auditory:item/shield/equip1",
+      "auditory:item/shield/equip2",
+      "auditory:item/shield/equip3",
+      "auditory:item/shield/equip4",
+      "auditory:item/shield/equip5",
+      "auditory:item/shield/equip6"
+    ],
+    "subtitle": "subtitles.item.shield.equip"
+  },
   "item.spawn_egg.use": {
     "sounds": [
       "auditory:item/spawn_egg/use1",
@@ -357,6 +368,12 @@
       "auditory:block/gourd/step3",
       "auditory:block/gourd/step4"
     ]
+  },
+  "block.sculk_shrieker.ambient": {
+    "sounds": [
+      "auditory:block/sculk_shrieker/ambient"
+    ],
+    "subtitle": "subtitles.block.sculk_shrieker.ambient"
   },
   "item.dried_kelp.eat": {
     "sounds": [

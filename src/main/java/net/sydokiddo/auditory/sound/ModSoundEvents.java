@@ -23,6 +23,7 @@ public class ModSoundEvents {
     public static final SoundEvent ITEM_SHEARS_SWING = registerSoundEvent("item.shears.swing");
     public static final SoundEvent ITEM_SPAWN_EGG_USE = registerSoundEvent("item.spawn_egg.use");
     public static final SoundEvent ITEM_SHIELD_RAISE = registerSoundEvent("item.shield.raise");
+    public static final SoundEvent ITEM_SHIELD_EQUIP = registerSoundEvent("item.shield.equip");
     public static final SoundEvent DRIED_KELP_EAT = registerSoundEvent("item.dried_kelp.eat");
     public static final SoundEvent SOFT_FRUIT_EAT = registerSoundEvent("item.soft_fruit.eat");
     public static final SoundEvent CRUNCHY_FRUIT_EAT = registerSoundEvent("item.crunchy_fruit.eat");
@@ -62,6 +63,8 @@ public class ModSoundEvents {
     public static final SoundEvent BLOCK_GOURD_PLACE = registerSoundEvent("block.gourd.place");
     public static final SoundEvent BLOCK_GOURD_HIT = registerSoundEvent("block.gourd.hit");
     public static final SoundEvent BLOCK_GOURD_FALL = registerSoundEvent("block.gourd.fall");
+
+    public static final SoundEvent BLOCK_SCULK_SHRIEKER_AMBIENT = registerSoundEvent("block.sculk_shrieker.ambient");
 
     // - Other Sounds:
 
@@ -146,6 +149,11 @@ public class ModSoundEvents {
         SoundEvents.CANDLE_BREAK, SoundEvents.CANDLE_STEP,
         SoundEvents.CANDLE_PLACE, SoundEvents.CANDLE_HIT,
         SoundEvents.CANDLE_FALL);
+
+    public static final SoundType SMALL_POT = new SoundType(1f, 1.3f,
+        SoundEvents.DECORATED_POT_BREAK, SoundEvents.DECORATED_POT_STEP,
+        SoundEvents.DECORATED_POT_PLACE, SoundEvents.DECORATED_POT_HIT,
+        SoundEvents.DECORATED_POT_FALL);
 
     private static SoundEvent registerSoundEvent(String name) {
         ResourceLocation id = new ResourceLocation(Auditory.MOD_ID, name);

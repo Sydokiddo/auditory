@@ -78,4 +78,10 @@ public class IndividualBlockSoundsConfig {
 
     @ConfigEntry.Gui.Tooltip
     public boolean gourdSounds = true;
+
+    @ConfigEntry.Gui.Tooltip
+    public boolean pot_sounds = true;
+
+    @ConfigEntry.Gui.Tooltip
+    public boolean bookshelf_sounds = true;
 }

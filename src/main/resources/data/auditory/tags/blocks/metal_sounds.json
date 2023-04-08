@@ -10,6 +10,7 @@
     "minecraft:hopper",
     "minecraft:piston",
     "minecraft:sticky_piston",
-    "minecraft:heavy_weighted_pressure_plate"
+    "minecraft:heavy_weighted_pressure_plate",
+    "#minecraft:cauldrons"
   ]
 }

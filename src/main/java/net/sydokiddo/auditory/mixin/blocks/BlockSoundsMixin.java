@@ -105,5 +105,11 @@ abstract class BlockSoundsMixin extends BlockBehaviour {
         else if (state.is(AuditoryTags.GOURD_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.gourdSounds)) {
             info.setReturnValue(ModSoundEvents.GOURD);
         }
+        else if (state.is(AuditoryTags.POT_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.pot_sounds)) {
+            info.setReturnValue(ModSoundEvents.SMALL_POT);
+        }
+        else if (state.is(AuditoryTags.BOOKSHELF_SOUNDS) && (Auditory.getConfig().block_sounds.blockSoundsConfig.bookshelf_sounds)) {
+            info.setReturnValue(SoundType.CHISELED_BOOKSHELF);
+        }
     }
 }

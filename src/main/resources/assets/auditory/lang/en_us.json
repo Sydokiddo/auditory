@@ -11,9 +11,11 @@
   "subtitles.entity.player.empty_hand_swing": "Player punches",
   "subtitles.item.spawn_egg.use": "Spawn Egg cracks",
   "subtitles.item.nametag.use": "Nametag is used",
+  "subtitles.item.shield.equip": "Shield equips",
   "subtitles.item.shield.raise": "Shield is raised",
   "subtitles.block.jukebox.use": "Disc inserted into Jukebox",
   "subtitles.block.jukebox.eject": "Disc removed from Jukebox",
+  "subtitles.block.sculk_shrieker.ambient": "Sculk Shrieker breathes",
 
   "text.autoconfig.auditory.title": "Auditory Configuration",
 
@@ -48,7 +50,7 @@
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.shulkerBoxSounds": "Shulker Box Sounds",
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.shulkerBoxSounds.@Tooltip": "Shulker Boxes will now use a unique sound group (Overridden if Endless Encore is installed)",
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.smallObjectSounds": "Small Object Sounds",
-  "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.smallObjectSounds.@Tooltip": "Various small objects such as Flower Pots, Torches, and more will now use a unique sound group",
+  "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.smallObjectSounds.@Tooltip": "Various small objects such as Torches and more will now use a unique sound group",
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.spawnerSounds": "Monster Spawner Sounds",
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.spawnerSounds.@Tooltip": "Monster Spawners will now use a unique sound group",
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.stoneBrickSounds": "Stone Brick Sounds",
@@ -71,6 +73,10 @@
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.iceSounds.@Tooltip": "Ice Blocks will now use new, unique sounds",
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.gourdSounds": "Melon and Pumpkin Sounds",
   "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.gourdSounds.@Tooltip": "Melons and Pumpkins will now use new, unique sounds",
+  "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.pot_sounds": "Flower Pot Sounds",
+  "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.pot_sounds.@Tooltip": "Flower Pots will now use similar sounds to Decorated Pots",
+  "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.bookshelf_sounds": "Bookshelf Sounds",
+  "text.autoconfig.auditory.option.block_sounds.blockSoundsConfig.bookshelf_sounds.@Tooltip": "Bookshelves will now use the same sounds as Chiseled Bookshelves",
 
   "text.autoconfig.auditory.option.block_sounds.falling_in_place_sound": "Falling in Place Block Sounds",
   "text.autoconfig.auditory.option.block_sounds.falling_in_place_sound.@Tooltip": "Falling or jumping in place will cause the footstep sounds to play",
@@ -80,6 +86,9 @@
   "text.autoconfig.auditory.option.block_sounds.flower_pot_sounds.@Tooltip": "Flower Pots play a sound when a plant is inserted into them",
   "text.autoconfig.auditory.option.block_sounds.cake_eating_sounds": "Cake Eating Sounds",
   "text.autoconfig.auditory.option.block_sounds.cake_eating_sounds.@Tooltip": "Cakes will play an eating sound when eaten by a player",
+  "text.autoconfig.auditory.option.block_sounds.sculk_shrieker_ambient_sounds": "Sculk Shrieker Ambient Sounds",
+  "text.autoconfig.auditory.option.block_sounds.sculk_shrieker_ambient_sounds.@Tooltip": "Sculk Shriekers that can summon Wardens will now make subtle ambient sounds",
+
 
   "text.autoconfig.auditory.option.item_sounds": "Item Sounds",
   "text.autoconfig.auditory.option.item_sounds.ender_pearl_sounds": "Ender Pearl Sounds",

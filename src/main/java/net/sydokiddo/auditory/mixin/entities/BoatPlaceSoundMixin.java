@@ -34,7 +34,11 @@ public abstract class BoatPlaceSoundMixin extends Item {
         if (Auditory.getConfig().item_sounds.boat_sounds) {
             if (boat.getVariant() == Boat.Type.BAMBOO) {
                 level.playSound(null, boat, SoundEvents.BAMBOO_WOOD_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
-            } else {
+            }
+            else if (boat.getVariant() == Boat.Type.CHERRY) {
+                level.playSound(null, boat, SoundEvents.CHERRY_WOOD_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
+            }
+            else {
                 level.playSound(null, boat, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4F);
             }
         }

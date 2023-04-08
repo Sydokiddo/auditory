@@ -1,4 +1,4 @@
-package net.sydokiddo.auditory.mixin.items;
+package net.sydokiddo.auditory.mixin.entities;
 
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.sounds.SoundEvents;

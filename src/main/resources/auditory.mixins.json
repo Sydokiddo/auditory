@@ -3,6 +3,7 @@
   "minVersion": "0.8",
   "package": "net.sydokiddo.auditory.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "auditory.refmap.json",
   "mixins": [
     "blocks.BlockSoundsMixin",
     "blocks.CakeEatingSoundMixin",

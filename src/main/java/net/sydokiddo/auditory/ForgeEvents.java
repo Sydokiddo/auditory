@@ -2,7 +2,7 @@ package net.sydokiddo.auditory;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,7 +19,7 @@ public class ForgeEvents {
         if (player != null && evt.phase == TickEvent.Phase.END && client.isWindowActive() &&
             ModEvents.RELOADKEY.consumeClick()) {
             Minecraft.getInstance().getSoundManager().reload();
-            client.gui.getChat().addMessage(Component.translatable("auditory.sound_reload_message"));
+            client.gui.getChat().addMessage(new TranslatableComponent("auditory.sound_reload_message"));
         }
     }
 }

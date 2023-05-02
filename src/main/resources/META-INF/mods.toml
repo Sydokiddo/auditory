@@ -61,4 +61,4 @@ modId = "cloth_config"
 mandatory = true
 versionRange = "[6.4.90,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"

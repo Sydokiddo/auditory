@@ -2,7 +2,7 @@ package net.sydokiddo.auditory;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
-import net.minecraftforge.client.ConfigScreenHandler;
+import net.minecraftforge.client.ConfigGuiHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -25,8 +25,8 @@ public class Auditory {
         LOGGER.info("Thank you for downloading Auditory! :)");
 
         // registering config gui
-        ModLoadingContext.get().registerExtensionPoint(ConfigScreenHandler.ConfigScreenFactory.class,
-            () -> new ConfigScreenHandler.ConfigScreenFactory((minecraft, screen) -> AutoConfig.getConfigScreen(ModConfig.class, screen).get()));
+        ModLoadingContext.get().registerExtensionPoint(ConfigGuiHandler.ConfigGuiFactory.class,
+            () -> new ConfigGuiHandler.ConfigGuiFactory((minecraft, screen) -> AutoConfig.getConfigScreen(ModConfig.class, screen).get()));
     }
 
     public static ModConfig getConfig() {

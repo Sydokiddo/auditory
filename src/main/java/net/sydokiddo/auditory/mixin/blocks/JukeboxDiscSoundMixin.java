@@ -31,8 +31,8 @@ public abstract class JukeboxDiscSoundMixin extends BaseEntityBlock {
 
     @Inject(method = "use",
         at = @At(
-            value = "FIELD",
-            target = "Lnet/minecraft/world/level/gameevent/GameEvent;JUKEBOX_STOP_PLAY:Lnet/minecraft/world/level/gameevent/GameEvent;"
+            value = "INVOKE",
+            target = "Lnet/minecraft/world/InteractionResult;sidedSuccess(Z)Lnet/minecraft/world/InteractionResult;"
         )
     )
     private void auditory_ejectDiscSound(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult, CallbackInfoReturnable<InteractionResult> cir) {
@@ -41,9 +41,8 @@ public abstract class JukeboxDiscSoundMixin extends BaseEntityBlock {
         }
     }
 
-
     @Inject(method = "setRecord", at = @At("HEAD"))
-    private void auditory_insertDiscSound(Entity entity, LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState, ItemStack itemStack, CallbackInfo ci) {
+    private void auditory_insertDiscSound(LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState, ItemStack itemStack, CallbackInfo ci) {
         if (Auditory.getConfig().block_sounds.jukebox_sounds) {
             levelAccessor.playSound(null, blockPos, ModSoundEvents.BLOCK_JUKEBOX_USE.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
         }

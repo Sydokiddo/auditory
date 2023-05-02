@@ -26,7 +26,7 @@ public abstract class BoatPlaceSoundMixin extends Item {
     // Only need one local, so it's easier and more stable to use ModifyVariable instead of Inject with LocalCapture
     @ModifyVariable(method = "use",
         at = @At(value = "INVOKE",
-            target = "Lnet/minecraft/world/level/Level;gameEvent(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/gameevent/GameEvent;Lnet/minecraft/world/phys/Vec3;)V",
+            target = "Lnet/minecraft/world/level/Level;gameEvent(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/gameevent/GameEvent;Lnet/minecraft/core/BlockPos;)V",
             shift = Shift.AFTER
         )
     )

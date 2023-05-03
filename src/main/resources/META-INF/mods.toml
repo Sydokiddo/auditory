@@ -56,3 +56,9 @@ mandatory = true
 versionRange = "[1.19.2,1.20)"
 ordering = "NONE"
 side = "BOTH"
+[[dependencies.auditory]]
+modId = "cloth_config"
+mandatory = true
+versionRange = "[8.2.88,)"
+ordering = "NONE"
+side = "CLIENT"

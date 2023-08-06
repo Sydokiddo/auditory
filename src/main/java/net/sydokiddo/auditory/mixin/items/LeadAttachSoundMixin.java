@@ -30,14 +30,14 @@ public abstract class LeadAttachSoundMixin extends LivingEntity {
     @Inject(method = "setLeashedTo", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerChunkCache;broadcast(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/protocol/Packet;)V"))
     private void auditory_leashSound(Entity entity, boolean bl, CallbackInfo ci) {
         if (Auditory.getConfig().item_sounds.lead_sounds) {
-            level.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.LEASH_KNOT_PLACE, SoundSource.NEUTRAL, 0.5F, 0.8f + this.level.random.nextFloat() * 0.4F);
+            level().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.LEASH_KNOT_PLACE, SoundSource.NEUTRAL, 0.5F, 0.8f + this.level().random.nextFloat() * 0.4F);
         }
     }
 
     @Inject(method = "interact", at = @At(value = "INVOKE", target = "net/minecraft/world/entity/Mob.dropLeash(ZZ)V", shift = Shift.AFTER))
     private void auditory_unleashSound(Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {
         if (Auditory.getConfig().item_sounds.lead_sounds) {
-            level.playSound(player, this.getX(), this.getY(), this.getZ(), SoundEvents.LEASH_KNOT_BREAK, SoundSource.NEUTRAL, 0.5F, 0.8f + this.level.random.nextFloat() * 0.4F);
+            level().playSound(player, this.getX(), this.getY(), this.getZ(), SoundEvents.LEASH_KNOT_BREAK, SoundSource.NEUTRAL, 0.5F, 0.8f + this.level().random.nextFloat() * 0.4F);
         }
     }
 }

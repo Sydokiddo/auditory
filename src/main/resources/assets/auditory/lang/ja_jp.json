@@ -18,7 +18,7 @@
 
   "text.autoconfig.auditory.option.block_sounds": "ブロックサウンド",
   "text.autoconfig.auditory.option.block_sounds.block_sounds": "新しいブロックサウンドを有効にする",
-  "text.autoconfig.auditory.option.block_sounds.block_sounds.@Tooltip": "trueに設定すると、新しいブロッサウンド音が有効になります",
+  "text.autoconfig.auditory.option.block_sounds.block_sounds.@Tooltip": "trueに設定すると、新しいブロッサウンドが有効になります",
   "text.autoconfig.auditory.option.block_sounds.falling_in_place_sound": "所定の位置に落ちるブロック音",
   "text.autoconfig.auditory.option.block_sounds.falling_in_place_sound.@Tooltip": "その場で落ちたりジャンプしたりすると足音が鳴ります",
   "text.autoconfig.auditory.option.block_sounds.jukebox_sounds": "ジュークボックスの操作音",

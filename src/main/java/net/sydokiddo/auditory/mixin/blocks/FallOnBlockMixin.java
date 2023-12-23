@@ -7,6 +7,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.sydokiddo.auditory.Auditory;
@@ -24,7 +25,7 @@ public abstract class FallOnBlockMixin {
     private void auditory_fallSound(Level level, BlockState blockState, BlockPos blockPos, Entity entity, float f, CallbackInfo ci) {
         if (Auditory.getConfig().block_sounds.falling_in_place_sound) {
             if (!entity.isCrouching() && entity instanceof LivingEntity && entity.getDeltaMovement().horizontalDistance() >= 0) {
-                if (!blockState.isAir() && !blockState.is(BlockTags.FIRE) && !blockState.is(BlockTags.PORTALS) && (!blockState.getMaterial().isLiquid())) {
+                if (!blockState.isAir() && !blockState.is(BlockTags.FIRE) && !blockState.is(BlockTags.PORTALS) && (!(blockState.getBlock() instanceof LiquidBlock))) {
                     SoundType soundType = blockState.getSoundType();
                     level.playSound(null, blockPos, soundType.getStepSound(), SoundSource.BLOCKS, soundType.getVolume() * 0.15F, soundType.getPitch());
                 }

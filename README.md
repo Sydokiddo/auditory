@@ -1,6 +1,6 @@
 ![github_icon](images/mod_icon.png)
 
-**Update: This project has been discontinued. You are free to do unofficial remakes/ports of the mod, as long as proper credit is required for the original.**
+**Update: This mod has been discontinued. You are free to do unofficial remakes/ports of the mod, as long as proper credit is required for the original.**
 
 ## **About Auditory**
 

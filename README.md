@@ -1,6 +1,6 @@
 ![github_icon](images/mod_icon.png)
 
-NOTE: Development of Auditory is currently on hold, and will return in a complete rewrite of the mod eventually! There is no estimated time of release for the rewrite as of now, but it should be sometime around 2024!
+**Update: This project has been discontinued. You are free to do unofficial remakes/ports of the mod, as long as proper credit is required for the original.**
 
 ## **About Auditory**
 

@@ -20,7 +20,7 @@ public class BowPullbackSound {
     @Inject(method = "use", at = @At(value = "RETURN", target = "Lnet/minecraft/world/entity/player/Player;startUsingItem(Lnet/minecraft/world/InteractionHand;)V"))
     private void auditory_pullbackSound(Level level, Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResultHolder<ItemStack>> cir) {
         if (Auditory.getConfig().weapon_sounds.bow_pullback_sounds) {
-            level.playSound(null, player.getOnPos(), ModSoundEvents.ITEM_BOW_PULLING, SoundSource.PLAYERS, 0.3F, 0.8f + player.level.random.nextFloat() * 0.4F);
+            level.playSound(null, player.getOnPos(), ModSoundEvents.ITEM_BOW_PULLING, SoundSource.PLAYERS, 0.3F, 0.8f + player.level().random.nextFloat() * 0.4F);
         }
     }
 }

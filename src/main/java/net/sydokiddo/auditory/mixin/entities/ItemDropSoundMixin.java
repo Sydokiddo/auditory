@@ -31,7 +31,7 @@ public abstract class ItemDropSoundMixin extends LivingEntity {
     @Inject(method = "drop(Lnet/minecraft/world/item/ItemStack;ZZ)Lnet/minecraft/world/entity/item/ItemEntity;", at = @At("TAIL"))
     private void auditory_itemDropSound(ItemStack itemStack, boolean bl, boolean bl2, CallbackInfoReturnable<ItemEntity> cir) {
         if (!this.isDeadOrDying() && !this.isRemoved() && Auditory.getConfig().misc_sounds.item_drop_sounds) {
-            this.playNotifySound(ModSoundEvents.ENTITY_PLAYER_DROP_ITEM, SoundSource.PLAYERS, 0.4F, 1.0F + level.random.nextFloat() * 0.4F);
+            this.playNotifySound(ModSoundEvents.ENTITY_PLAYER_DROP_ITEM, SoundSource.PLAYERS, 0.4F, 1.0F + level().random.nextFloat() * 0.4F);
         }
     }
 }
